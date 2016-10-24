@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+
+<!--
+  * plugins/paymethod/paypal/locale/en_US/emailTemplates.xml
+  *
+  * Copyright (c) 2014 Simon Fraser University Library
+  * Copyright (c) 2003-2014 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localized email templates XML file.
+  -->
+
+<email_texts locale="pt_BR">
+	<email_text key="PAYPAL_INVESTIGATE_PAYMENT">
+		<subject>Atividade incomum PayPal</subject>
+		<body>Open Monograph Press encontrou a atividade incomum relativas ao suporte de pagamento PayPal para a imprensa {$contextName}. Esta atividade pode ser necessário mais investigação ou intervenção manual.
+
+Esse e-mail foi gerado pelo Open Monograph Press PayPal plugin.
+
+Post completo de informações para a solicitação:
+{$postInfo}
+
+Informações adicionais (se fornecido):
+{$additionalInfo}
+
+Vars de servidor:
+{$serverVars}
+</body>
+		<description>Este modelo de email é usado para notificar o contato principal da imprensa que atividades suspeitas ou atividade que exija uma intervenção manual foi encontrada pela PayPal plugin.</description>
+	</email_text>
+</email_texts>

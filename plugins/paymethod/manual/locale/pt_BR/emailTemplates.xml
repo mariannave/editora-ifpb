@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE email_texts SYSTEM "../../../../../lib/pkp/dtd/emailTemplateData.dtd">
+
+<!--
+  * plugins/paymethod/manual/locale/en_US/emailTemplates.xml
+  *
+  * Copyright (c) 2014 Simon Fraser University Library
+  * Copyright (c) 2003-2014 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localized email templates XML file.
+  -->
+
+<email_texts locale="pt_BR">
+	<email_text key="MANUAL_PAYMENT_NOTIFICATION">
+		<subject>Notificação de Pagamento Manual</subject>
+		<body>Um pagamento manual precisa ser processada para a imprensa {$contextName} e o usuário {$userFullName} (username "{$userName}").
+
+					O item que está sendo pago é "{$itemName}".
+					O custo é {$itemCost} ({$itemCurrencyCode}).
+				Este e-mail foi gerado pelo Open Monograph Press Manual Payment plugin.</body>
+				<description>Este modelo de email é usado para notificar um gerente de contato de imprensa que foi solicitado um pagamento manual.</description>
+	</email_text>
+</email_texts>

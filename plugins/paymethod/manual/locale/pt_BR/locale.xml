@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/paymethod/manual/locale/en_US/locale.xml
+  *
+  * Copyright (c) 2014 Simon Fraser University Library
+  * Copyright (c) 2003-2014 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the en_US (U.S. English) locale.
+  -->
+
+<locale name="pt_BR" full_name="Português (Brasil)">
+	<message key="plugins.paymethod.manual.displayName">Pagamento de taxa manual</message>
+	<message key="plugins.paymethod.manual.description">O gerente manualmente irá gravar o recibo de pagamento do usuário (fora este software).</message>
+	<message key="plugins.paymethod.manual">Pagamento de taxa manual</message>
+	<message key="plugins.paymethod.manual.settings">Configurações de pagamento manual</message>
+	<message key="plugins.paymethod.manual.settings.instructions">Instruções</message>
+	<message key="plugins.paymethod.manual.settings.manualInstructions">Instruções de pagamento de taxa para usuários selecionando pagamento taxa manual</message>
+
+	<message key="plugins.paymethod.manual.sendNotificationOfPayment">Enviar a notificação de pagamento</message>
+	<message key="plugins.paymethod.manual.paymentNotification">Notificação de pagamento</message>
+	<message key="plugins.paymethod.manual.notificationSent">Notificação de pagamento enviada</message>
+
+	<message key="plugins.paymethod.manual.purchase.title">Título</message>
+	<message key="plugins.paymethod.manual.purchase.fee">Taxa</message>
+</locale>
