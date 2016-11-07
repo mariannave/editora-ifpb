@@ -44,7 +44,7 @@ class ONIXCodelistItemDAO extends DAO {
 				array($this, '_cacheMiss')
 			);
 			$cacheTime = $cache->getCacheTime();
-			if ($cacheTime !== null && $cacheTime < filemtime($this->getFilename($locale))) {
+			// if ($cacheTime !== null && $cacheTime < filemtime($this->getFilename($locale))) {
 				$cache->flush();
 			}
 		}
