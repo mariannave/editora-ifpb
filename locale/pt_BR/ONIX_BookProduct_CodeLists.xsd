@@ -119,38 +119,38 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 		<xs:simpleType name="List1">
 		<xs:annotation>
-			<xs:documentation source="ONIX Code List 1">Código de tipo de notificação ou atualização</xs:documentation>
+			<xs:documentation source="ONIX Code List 1">Código de tipo de notificacao ou atualizacao</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="01">
 				<xs:annotation>
-					<xs:documentation>Notificação antecipada</xs:documentation>
-					<xs:documentation>Use para um registro completo emitido mais cedo do que cerca de seis meses antes da publicação.</xs:documentation>
+					<xs:documentation>Notificacao antecipada</xs:documentation>
+					<xs:documentation>Use para um registro completo emitido mais cedo do que cerca de seis meses antes da publicacao.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="02">
 				<xs:annotation>
-					<xs:documentation>Notificação prévia (confirmada)</xs:documentation>
+					<xs:documentation>Notificacao previa (confirmada)</xs:documentation>
 					<xs:documentation>
-Use para um registro completo emitido para confirmar a informação antecipadamente cerca de seis meses antes da publicação; ou para um registro completo emitido após essa data e antes que a informação foi confirmada a partir do book-in-hand.</xs:documentation>
+Use para um registro completo emitido para confirmar a informacao antecipadamente cerca de seis meses antes da publicacao; ou para um registro completo emitido após essa data e antes que a informacao foi confirmada a partir do book-in-hand.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="03">
 				<xs:annotation>
-					<xs:documentation>Notificação confirmada nesta publicação</xs:documentation>
-					<xs:documentation>Use para um registro completo emitido para confirmar a informação antecipadamente ou apenas antes da data de publicação efetiva; ou para um registro completo emitido em qualquer momento posterior.</xs:documentation>
+					<xs:documentation>Notificacao confirmada nesta publicacao</xs:documentation>
+					<xs:documentation>Use para um registro completo emitido para confirmar a informacao antecipadamente ou apenas antes da data de publicacao efetiva; ou para um registro completo emitido em qualquer momento posterior.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="04">
 				<xs:annotation>
 					<xs:documentation>Update (parial)</xs:documentation>
-					<xs:documentation>Em ONIX 3.0 apenas, usar quando enviar um registro 'block update'. Em versões anteriores ONIX, a atualização ONIX tem sido geralmente por substituição completa do registro utilizando o código 03, o código 04 não é usada.</xs:documentation>
+					<xs:documentation>Em ONIX 3.0 apenas, usar quando enviar um registro 'block update'. Em versões anteriores ONIX, a atualizacao ONIX tem sido geralmente por substituicao completa do registro utilizando o código 03, o código 04 nao e usada.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="05">
 				<xs:annotation>
 					<xs:documentation>Excluir</xs:documentation>
-					<xs:documentation>Usar quando enviar uma instrução para excluir um registro que foi emitido anteriormente. Note-se que uma instrução EXCLUIR não deve ser usado quando um produto for cancelado, colocado fora de catálogo, ou retirado de venda: esta deve ser tratada como uma mudança de status Publishing, deixando o receptor decidir se quer manter ou eliminar o registo. Uma instrução Excluir só é utilizado quando há uma razão especial para retirar um registro completamente, por exemplo, porque foi enviado com erro.</xs:documentation>
+					<xs:documentation>Usar quando enviar uma instrucao para excluir um registro que foi emitido anteriormente. Note-se que uma instrucao EXCLUIR nao deve ser usado quando um produto for cancelado, colocado fora de catálogo, ou retirado de venda: esta deve ser tratada como uma mudanca de status Publishing, deixando o receptor decidir se quer manter ou eliminar o registo. Uma instrucao Excluir só e utilizado quando há uma razao especial para retirar um registro completamente, por exemplo, porque foi enviado com erro.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="08">
@@ -161,8 +161,8 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="09">
 				<xs:annotation>
-					<xs:documentation>Aviso de aquisição</xs:documentation>
-					<xs:documentation>Aviso de aquisição de um produto, de um editor para outro: enviado pela aquisição de editora.</xs:documentation>
+					<xs:documentation>Aviso de aquisicao</xs:documentation>
+					<xs:documentation>Aviso de aquisicao de um produto, de um editor para outro: enviado pela aquisicao de editora.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="12">
@@ -187,7 +187,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 	</xs:simpleType>
 	<xs:simpleType name="List2">
 		<xs:annotation>
-			<xs:documentation source="ONIX Code List 2">Composição do produto</xs:documentation>
+			<xs:documentation source="ONIX Code List 2">Composicao do produto</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="00">
@@ -205,7 +205,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="11">
 				<xs:annotation>
 					<xs:documentation>Colecao de varios itens, vendidos em partes separadas</xs:documentation>
-					<xs:documentation>Usado quando um registro ONIX é necessário para um coleção-como-um-todo, mesmo que isso não seja atualmente vendido como tal..</xs:documentation>
+					<xs:documentation>Usado quando um registro ONIX e necessário para um colecao-como-um-todo, mesmo que isso nao seja atualmente vendido como tal..</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="20">
@@ -242,7 +242,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="02">
 				<xs:annotation>
 					<xs:documentation>Distribuidor da editora</xs:documentation>
-					<xs:documentation>Use para designar um distribuidor fornecendo armazenagem e satisfação para um editor ou para o agente de vendas de uma editora, como distinto de um atacadista.</xs:documentation>
+					<xs:documentation>Use para designar um distribuidor fornecendo armazenagem e satisfacao para um editor ou para o agente de vendas de uma editora, como distinto de um atacadista.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="03">
@@ -266,7 +266,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="06">
 				<xs:annotation>
 					<xs:documentation>Agente de vendas da editora</xs:documentation>
-					<xs:documentation>Use para agente de vendas de uma editora responsável pela comercialização dos produtos da editora dentro de um território, em oposição ao distribuidor de um editor que cumpre ordens, mas não de mercado.</xs:documentation>
+					<xs:documentation>Use para agente de vendas de uma editora responsável pela comercializacao dos produtos da editora dentro de um território, em oposicao ao distribuidor de um editor que cumpre ordens, mas nao de mercado.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="07">
@@ -277,7 +277,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="08">
 				<xs:annotation>
-					<xs:documentation>Prestador de serviços de conversão</xs:documentation>
+					<xs:documentation>Prestador de servicos de conversao</xs:documentation>
 					<xs:documentation>Downstream provider of e-publication format conversion service (who might also be a distributor or retailer of the converted e-publication), supplying metadata on behalf of the publisher. The assigned ISBN is taken from the service provider's prefix (whether or not the service provider dedicates that prefix to a particular publisher).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -393,13 +393,13 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="00">
 				<xs:annotation>
-					<xs:documentation>Não possui código de barras</xs:documentation>
+					<xs:documentation>Nao possui código de barras</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="01">
 				<xs:annotation>
-					<xs:documentation>Código de barras, regime não especificado.</xs:documentation>
+					<xs:documentation>Código de barras, regime nao especificado.</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
@@ -863,7 +863,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="AA">
 				<xs:annotation>
 					<xs:documentation>Audio</xs:documentation>
-					<xs:documentation>Audio recording -Detalhe não especificado.</xs:documentation>
+					<xs:documentation>Audio recording -Detalhe nao especificado.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="AB">
@@ -935,7 +935,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="AZ">
 				<xs:annotation>
 					<xs:documentation>Outros formatos de audio</xs:documentation>
-					<xs:documentation>Outros formatos de audio não especificado pelo AB para AL</xs:documentation>
+					<xs:documentation>Outros formatos de audio nao especificado pelo AB para AL</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="BA">
@@ -971,12 +971,12 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="BF">
 				<xs:annotation>
 					<xs:documentation>Panfleto</xs:documentation>
-					<xs:documentation>Panfleto ou brochura, grampeado; Alemão 'geheftet'.</xs:documentation>
+					<xs:documentation>Panfleto ou brochura, grampeado; Alemao 'geheftet'.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="BG">
 				<xs:annotation>
-					<xs:documentation>Couro / vinculação de bem</xs:documentation>
+					<xs:documentation>Couro / vinculacao de bem</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
@@ -1025,7 +1025,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="BO">
 				<xs:annotation>
 					<xs:documentation>Livro desdobravel ou grafico</xs:documentation>
-					<xs:documentation>Livro sanfona-dobrado ou grafico, projetada para dobrar bolso ou tamanho de pagina normal: use para alemão 'Leporello'.</xs:documentation>
+					<xs:documentation>Livro sanfona-dobrado ou grafico, projetada para dobrar bolso ou tamanho de pagina normal: use para alemao 'Leporello'.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="BP">
@@ -1330,7 +1330,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="PQ">
 				<xs:annotation>
-					<xs:documentation>Plate (lÃ¡mina)</xs:documentation>
+					<xs:documentation>Plate (la¡mina)</xs:documentation>
 					<xs:documentation>A book-sized (as opposed to poster-sized) sheet, usually in colour or high quality print.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -1668,7 +1668,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="04">
 				<xs:annotation>
-					<xs:documentation>Warenverzeichnis fÃ¼r die AuÃŸenhandelsstatistik</xs:documentation>
+					<xs:documentation>Warenverzeichnis fa¼r die AuaŸenhandelsstatistik</xs:documentation>
 					<xs:documentation>German export trade classification, based on the Harmonised System.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -1874,7 +1874,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="027">
 				<xs:annotation>
 					<xs:documentation>Sony BBeB</xs:documentation>
-					<xs:documentation>An epublication in a Sony proprietary format for use with the Sony Reader and LIBRIÃ© reading devices.</xs:documentation>
+					<xs:documentation>An epublication in a Sony proprietary format for use with the Sony Reader and LIBRIa© reading devices.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="028">
@@ -2121,13 +2121,13 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="08">
 				<xs:annotation>
-					<xs:documentation>Livre scolaire, dÃ©clarÃ© par l'Ã©diteur</xs:documentation>
+					<xs:documentation>Livre scolaire, da©clara© par l'a©diteur</xs:documentation>
 					<xs:documentation>In France, a category of book that has a particular legal status, claimed by the publisher.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="09">
 				<xs:annotation>
-					<xs:documentation>Livre scolaire (non spÃ©cifiÃ©)</xs:documentation>
+					<xs:documentation>Livre scolaire (non spa©cifia©)</xs:documentation>
 					<xs:documentation>In France, a category of book that has a particular legal status, designated independently of the publisher.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -3808,7 +3808,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="28">
 				<xs:annotation>
-					<xs:documentation>ThÃ¨mes Electre</xs:documentation>
+					<xs:documentation>Tha¨mes Electre</xs:documentation>
 					<xs:documentation>Subject classification used by Electre (France).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -3874,7 +3874,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="39">
 				<xs:annotation>
-					<xs:documentation>LÃ¦replaner</xs:documentation>
+					<xs:documentation>La¦replaner</xs:documentation>
 					<xs:documentation>Norwegian school curriculum version (4703).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -3893,7 +3893,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="42">
 				<xs:annotation>
 					<xs:documentation>ANELE Materias</xs:documentation>
-					<xs:documentation>Spain: subject coding scheme of the AsociaciÃ³n Nacional de Editores de Libros y Material de EnseÃ±anza.</xs:documentation>
+					<xs:documentation>Spain: subject coding scheme of the Asociacia³n Nacional de Editores de Libros y Material de Ensea±anza.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="43">
@@ -3904,7 +3904,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="44">
 				<xs:annotation>
-					<xs:documentation>VideregÃ¥ende</xs:documentation>
+					<xs:documentation>Viderega¥ende</xs:documentation>
 					<xs:documentation>Norwegian list of categories used in higher secondary education and vocational training (4706).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -3934,13 +3934,13 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="49">
 				<xs:annotation>
-					<xs:documentation>LÃ¤romedel</xs:documentation>
+					<xs:documentation>La¤romedel</xs:documentation>
 					<xs:documentation>Swedish bookselling educational subject.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="50">
 				<xs:annotation>
-					<xs:documentation>FÃ¶rhandsbeskrivning</xs:documentation>
+					<xs:documentation>Fa¶rhandsbeskrivning</xs:documentation>
 					<xs:documentation>Swedish publishers preliminary subject classification.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -3953,7 +3953,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="52">
 				<xs:annotation>
 					<xs:documentation>ECI subject categories</xs:documentation>
-					<xs:documentation>Subject categories defined by El Corte InglÃ©s and used widely in the Spanish book trade.</xs:documentation>
+					<xs:documentation>Subject categories defined by El Corte Ingla©s and used widely in the Spanish book trade.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="53">
@@ -3988,20 +3988,20 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="58">
 				<xs:annotation>
-					<xs:documentation>Qualificatore di etÃ  di lettura CCE</xs:documentation>
+					<xs:documentation>Qualificatore di eta  di lettura CCE</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="59">
 				<xs:annotation>
-					<xs:documentation>VdS Bildungsmedien FÃ¤cher</xs:documentation>
+					<xs:documentation>VdS Bildungsmedien Fa¤cher</xs:documentation>
 					<xs:documentation>Subject code list of the German association of educational media publishers.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="60">
 				<xs:annotation>
 					<xs:documentation>Fagkoder</xs:documentation>
-					<xs:documentation>Undervisningsdirektoratets fagkoder for kunnskapslÃ¸ftet I videregÃ¥ende (Norwegian educational curriculum for secondary schools) (4708).</xs:documentation>
+					<xs:documentation>Undervisningsdirektoratets fagkoder for kunnskapsla¸ftet I viderega¥ende (Norwegian educational curriculum for secondary schools) (4708).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="61">
@@ -4019,7 +4019,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="63">
 				<xs:annotation>
 					<xs:documentation>RVM</xs:documentation>
-					<xs:documentation>RÃ©pertoire de vedettes-matiÃ¨re (BibliothÃ¨que et Archives Canada et BibliothÃ¨que de l'UniversitÃ© Laval) (French).</xs:documentation>
+					<xs:documentation>Ra©pertoire de vedettes-matia¨re (Bibliotha¨que et Archives Canada et Bibliotha¨que de l'Universita© Laval) (French).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="64">
@@ -4030,14 +4030,14 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="65">
 				<xs:annotation>
-					<xs:documentation>AllÃ¤rs</xs:documentation>
-					<xs:documentation>AllmÃ¤n tesaurus pÃ¥ svenska: Swedish translation of the Finnish General Thesaurus. See http://onki.fi/fi/browser/ (in Finnish).</xs:documentation>
+					<xs:documentation>Alla¤rs</xs:documentation>
+					<xs:documentation>Allma¤n tesaurus pa¥ svenska: Swedish translation of the Finnish General Thesaurus. See http://onki.fi/fi/browser/ (in Finnish).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="66">
 				<xs:annotation>
 					<xs:documentation>YKL</xs:documentation>
-					<xs:documentation>Yleisten kirjastojen luokitusjÃ¤rjestelmÃ¤: Finnish Public Libraries Classification System. See http://ykl.kirjastot.fi/ (in Finnish).</xs:documentation>
+					<xs:documentation>Yleisten kirjastojen luokitusja¤rjestelma¤: Finnish Public Libraries Classification System. See http://ykl.kirjastot.fi/ (in Finnish).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="67">
@@ -4049,7 +4049,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="68">
 				<xs:annotation>
 					<xs:documentation>CILLA</xs:documentation>
-					<xs:documentation>Specialtesaurus fÃ¶r musik: Swedish translation of the Finnish Music Thesaurus. See http://onki.fi/fi/browser/ (in Finnish).</xs:documentation>
+					<xs:documentation>Specialtesaurus fa¶r musik: Swedish translation of the Finnish Music Thesaurus. See http://onki.fi/fi/browser/ (in Finnish).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="69">
@@ -4061,7 +4061,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="70">
 				<xs:annotation>
 					<xs:documentation>Bella</xs:documentation>
-					<xs:documentation>Specialtesaurus fÃ¶r fiktivt material: Swedish translation of the Finnish thesaurus for fiction. See http://kaunokki.kirjastot.fi/sv-FI/ (in Finnish).</xs:documentation>
+					<xs:documentation>Specialtesaurus fa¶r fiktivt material: Swedish translation of the Finnish thesaurus for fiction. See http://kaunokki.kirjastot.fi/sv-FI/ (in Finnish).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="71">
@@ -4120,7 +4120,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="80">
 				<xs:annotation>
-					<xs:documentation>Fiktiivisen aineiston lisÃ¤luokitus</xs:documentation>
+					<xs:documentation>Fiktiivisen aineiston lisa¤luokitus</xs:documentation>
 					<xs:documentation>Finnish fiction genre classification. See http://ykl.kirjastot.fi/fi-FI/lisaluokat/ (in Finnish).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -4313,7 +4313,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="28">
 				<xs:annotation>
-					<xs:documentation>ThÃ¨mes Electre</xs:documentation>
+					<xs:documentation>Tha¨mes Electre</xs:documentation>
 					<xs:documentation>Subject classification used by Electre (France).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -4379,7 +4379,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="39">
 				<xs:annotation>
-					<xs:documentation>LÃ¦replaner</xs:documentation>
+					<xs:documentation>La¦replaner</xs:documentation>
 					<xs:documentation>Norwegian school curriculum version (4703).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -4398,7 +4398,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="42">
 				<xs:annotation>
 					<xs:documentation>ANELE Materias</xs:documentation>
-					<xs:documentation>Spain: subject coding scheme of the AsociaciÃ³n Nacional de Editores de Libros y Material de EnseÃ±anza.</xs:documentation>
+					<xs:documentation>Spain: subject coding scheme of the Asociacia³n Nacional de Editores de Libros y Material de Ensea±anza.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="43">
@@ -4409,7 +4409,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="44">
 				<xs:annotation>
-					<xs:documentation>VideregÃ¥ende</xs:documentation>
+					<xs:documentation>Viderega¥ende</xs:documentation>
 					<xs:documentation>Norwegian list of categories used in higher secondary education and vocational training (4706).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -4439,13 +4439,13 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="49">
 				<xs:annotation>
-					<xs:documentation>LÃ¤romedel</xs:documentation>
+					<xs:documentation>La¤romedel</xs:documentation>
 					<xs:documentation>Swedish bookselling educational subject.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="50">
 				<xs:annotation>
-					<xs:documentation>FÃ¶rhandsbeskrivning</xs:documentation>
+					<xs:documentation>Fa¶rhandsbeskrivning</xs:documentation>
 					<xs:documentation>Swedish publishers preliminary subject classification.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -4458,7 +4458,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="52">
 				<xs:annotation>
 					<xs:documentation>ECI subject categories</xs:documentation>
-					<xs:documentation>Subject categories defined by El Corte InglÃ©s and used widely in the Spanish book trade.</xs:documentation>
+					<xs:documentation>Subject categories defined by El Corte Ingla©s and used widely in the Spanish book trade.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="53">
@@ -4493,20 +4493,20 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="58">
 				<xs:annotation>
-					<xs:documentation>Qualificatore di etÃ  di lettura CCE</xs:documentation>
+					<xs:documentation>Qualificatore di eta  di lettura CCE</xs:documentation>
 					<xs:documentation>CCE Reading Level Qualifier.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="59">
 				<xs:annotation>
-					<xs:documentation>VdS Bildungsmedien FÃ¤cher</xs:documentation>
+					<xs:documentation>VdS Bildungsmedien Fa¤cher</xs:documentation>
 					<xs:documentation>Subject code list of the German association of educational media publishers.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="60">
 				<xs:annotation>
 					<xs:documentation>Fagkoder</xs:documentation>
-					<xs:documentation>Undervisningsdirektoratets fagkoder for kunnskapslÃ¸ftet I videregÃ¥ende (Norwegian educational curriculum for secondary schools) (4708).</xs:documentation>
+					<xs:documentation>Undervisningsdirektoratets fagkoder for kunnskapsla¸ftet I viderega¥ende (Norwegian educational curriculum for secondary schools) (4708).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="61">
@@ -4524,7 +4524,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="63">
 				<xs:annotation>
 					<xs:documentation>RVM</xs:documentation>
-					<xs:documentation>RÃ©pertoire de vedettes-matiÃ¨re (BibliothÃ¨que et Archives Canada et BibliothÃ¨que de l'UniversitÃ© Laval) (French).</xs:documentation>
+					<xs:documentation>Ra©pertoire de vedettes-matia¨re (Bibliotha¨que et Archives Canada et Bibliotha¨que de l'Universita© Laval) (French).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="64">
@@ -4535,14 +4535,14 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="65">
 				<xs:annotation>
-					<xs:documentation>AllÃ¤rs</xs:documentation>
-					<xs:documentation>AllmÃ¤n tesaurus pÃ¥ svenska: Swedish translation of the Finnish General Thesaurus. See http://onki.fi/fi/browser/ (in Finnish).</xs:documentation>
+					<xs:documentation>Alla¤rs</xs:documentation>
+					<xs:documentation>Allma¤n tesaurus pa¥ svenska: Swedish translation of the Finnish General Thesaurus. See http://onki.fi/fi/browser/ (in Finnish).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="66">
 				<xs:annotation>
 					<xs:documentation>YKL</xs:documentation>
-					<xs:documentation>Yleisten kirjastojen luokitusjÃ¤rjestelmÃ¤: Finnish Public Libraries Classification System. See http://ykl.kirjastot.fi/ (in Finnish).</xs:documentation>
+					<xs:documentation>Yleisten kirjastojen luokitusja¤rjestelma¤: Finnish Public Libraries Classification System. See http://ykl.kirjastot.fi/ (in Finnish).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="67">
@@ -4554,7 +4554,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="68">
 				<xs:annotation>
 					<xs:documentation>CILLA</xs:documentation>
-					<xs:documentation>Specialtesaurus fÃ¶r musik: Swedish translation of the Finnish Music Thesaurus. See http://onki.fi/fi/browser/ (in Finnish).</xs:documentation>
+					<xs:documentation>Specialtesaurus fa¶r musik: Swedish translation of the Finnish Music Thesaurus. See http://onki.fi/fi/browser/ (in Finnish).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="69">
@@ -4566,7 +4566,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="70">
 				<xs:annotation>
 					<xs:documentation>Bella</xs:documentation>
-					<xs:documentation>Specialtesaurus fÃ¶r fiktivt material: Swedish translation of the Finnish thesaurus for fiction. See http://kaunokki.kirjastot.fi/sv-FI/ (in Finnish).</xs:documentation>
+					<xs:documentation>Specialtesaurus fa¶r fiktivt material: Swedish translation of the Finnish thesaurus for fiction. See http://kaunokki.kirjastot.fi/sv-FI/ (in Finnish).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="71">
@@ -4625,7 +4625,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="80">
 				<xs:annotation>
-					<xs:documentation>Fiktiivisen aineiston lisÃ¤luokitus</xs:documentation>
+					<xs:documentation>Fiktiivisen aineiston lisa¤luokitus</xs:documentation>
 					<xs:documentation>Finnish fiction genre classification. See http://ykl.kirjastot.fi/fi-FI/lisaluokat/ (in Finnish).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -4710,13 +4710,13 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="04">
 				<xs:annotation>
-					<xs:documentation>Ensino Primario e SecundÃ¡rio/Fundamental e MÃ©dio</xs:documentation>
+					<xs:documentation>Ensino Primario e Secunda¡rio/Fundamental e Ma©dio</xs:documentation>
 					<xs:documentation>Kindergarten, pre-school, primary/elementary or secondary/high school education.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="05">
 				<xs:annotation>
-					<xs:documentation>GraduaÃ§Ã£o</xs:documentation>
+					<xs:documentation>Graduaa§a£o</xs:documentation>
 					<xs:documentation>For universities and colleges of further and higher education.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -4790,7 +4790,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="08">
 				<xs:annotation>
 					<xs:documentation>ANELE Tipo</xs:documentation>
-					<xs:documentation>Spain: educational audience and material type code of the AsociaciÃ³n Nacional de Editores de Libros y Material de EnseÃ±anza.</xs:documentation>
+					<xs:documentation>Spain: educational audience and material type code of the Asociacia³n Nacional de Editores de Libros y Material de Ensea±anza.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="09">
@@ -4911,7 +4911,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="19">
 				<xs:annotation>
 					<xs:documentation>Spanish school grade</xs:documentation>
-					<xs:documentation>Spain: combined grade and region code, maintained by the Ministerio de EducaciÃ³n.</xs:documentation>
+					<xs:documentation>Spain: combined grade and region code, maintained by the Ministerio de Educacia³n.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="20">
@@ -4922,7 +4922,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="21">
 				<xs:annotation>
-					<xs:documentation>NivÃ¥</xs:documentation>
+					<xs:documentation>Niva¥</xs:documentation>
 					<xs:documentation>Swedish educational qualifier (code).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -6106,7 +6106,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="04">
 				<xs:annotation>
-					<xs:documentation>BÃ¶rsenverein Verkehrsnummer</xs:documentation>
+					<xs:documentation>Ba¶rsenverein Verkehrsnummer</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
@@ -6173,7 +6173,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="20">
 				<xs:annotation>
 					<xs:documentation>GKD</xs:documentation>
-					<xs:documentation>Gemeinsame KÃ¶rperschaftsdatei - Corporate Body Authority File in the German-speaking countries. See http://www.d-nb.de/standardisierung/normdateien/gkd.htm (German) or http://www.d-nb.de/eng/standardisierung/normdateien/gkd.htm (English).</xs:documentation>
+					<xs:documentation>Gemeinsame Ka¶rperschaftsdatei - Corporate Body Authority File in the German-speaking countries. See http://www.d-nb.de/standardisierung/normdateien/gkd.htm (German) or http://www.d-nb.de/eng/standardisierung/normdateien/gkd.htm (English).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="21">
@@ -6294,55 +6294,55 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="00">
 				<xs:annotation>
-					<xs:documentation>Direitos de venda desconhecido ou nÃ£o declarado</xs:documentation>
+					<xs:documentation>Direitos de venda desconhecido ou na£o declarado</xs:documentation>
 					<xs:documentation>May only be used with the ONIX 3 &lt;ROWSalesRightsType&gt; element.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="01">
 				<xs:annotation>
-					<xs:documentation>Para venda sem restriÃ§Ã£o, com direitos exclusivos dos paÃ­ses ou territÃ³rios especificados</xs:documentation>
+					<xs:documentation>Para venda sem restria§a£o, com direitos exclusivos dos paa­ses ou territa³rios especificados</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="02">
 				<xs:annotation>
-					<xs:documentation>Para venda sem restriÃ§Ã£o, com direitos nÃ£o exclusivos dos paÃ­ses ou territÃ³rios especificados</xs:documentation>
+					<xs:documentation>Para venda sem restria§a£o, com direitos na£o exclusivos dos paa­ses ou territa³rios especificados</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="03">
 				<xs:annotation>
-					<xs:documentation>NÃ£o estÃ¡ a venda nos paÃ­ses ou territÃ³rios especificados</xs:documentation>
+					<xs:documentation>Na£o esta¡ a venda nos paa­ses ou territa³rios especificados</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="04">
 				<xs:annotation>
-					<xs:documentation>NÃ£o estÃ¡ Ã  venda nos paÃ­ses especificados (mas editora detÃ©m direitos exclusivos desses paÃ­ses ou territÃ³rios)</xs:documentation>
+					<xs:documentation>Na£o esta¡ a  venda nos paa­ses especificados (mas editora deta©m direitos exclusivos desses paa­ses ou territa³rios)</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="05">
 				<xs:annotation>
-					<xs:documentation>NÃ£o estÃ¡ Ã  venda nos paÃ­ses especificados (editora detÃ©m direitos nÃ£o exclusivos desses paÃ­ses ou territÃ³rios)</xs:documentation>
+					<xs:documentation>Na£o esta¡ a  venda nos paa­ses especificados (editora deta©m direitos na£o exclusivos desses paa­ses ou territa³rios)</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="06">
 				<xs:annotation>
-					<xs:documentation>NÃ£o estÃ¡ Ã  venda nos paÃ­ses especificados (Porque a Editora nÃ£o detÃªm direitos nesses paÃ­ses ou territÃ³rios)</xs:documentation>
+					<xs:documentation>Na£o esta¡ a  venda nos paa­ses especificados (Porque a Editora na£o detaªm direitos nesses paa­ses ou territa³rios)</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="07">
 				<xs:annotation>
-					<xs:documentation>Para venda com direitos exclusivos dos paÃ­ses ou territÃ³rios especificados (restriÃ§Ã£o de vendas aplicÃ¡vel)</xs:documentation>
+					<xs:documentation>Para venda com direitos exclusivos dos paa­ses ou territa³rios especificados (restria§a£o de vendas aplica¡vel)</xs:documentation>
 					<xs:documentation>Only for use with ONIX 3.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="08">
 				<xs:annotation>
-					<xs:documentation>Para venda com direitos nÃ£o exclusivos dos paÃ­ses ou territÃ³rios especificados (restriÃ§Ã£o de vendas aplicÃ¡vel)</xs:documentation>
+					<xs:documentation>Para venda com direitos na£o exclusivos dos paa­ses ou territa³rios especificados (restria§a£o de vendas aplica¡vel)</xs:documentation>
 					<xs:documentation>Only for use with ONIX 3.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -7986,7 +7986,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="10">
 				<xs:annotation>
-					<xs:documentation>NÃ£o disponÃ­vel ainda</xs:documentation>
+					<xs:documentation>Nao disponaivel ainda</xs:documentation>
 					<xs:documentation>Not yet available (requires &lt;ExpectedShipDate&gt;, except in exceptional circumstances where no date is known).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -7998,13 +7998,13 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="12">
 				<xs:annotation>
-					<xs:documentation>Ainda nÃ£o estÃ¡ disponÃ­vel, serÃ¡ impresso apenas sob-demanda</xs:documentation>
+					<xs:documentation>Ainda nao esta disponi­vel, sera impresso apenas sob-demanda</xs:documentation>
 					<xs:documentation>Not yet available, to be published as print-on-demand only. May apply either to a POD successor to an existing conventional edition, when the successor will be published under a different ISBN (normally because different trade terms apply); or to a title that is being published as a POD original.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="20">
 				<xs:annotation>
-					<xs:documentation>DisponÃ­vel</xs:documentation>
+					<xs:documentation>Disponivel</xs:documentation>
 					<xs:documentation>Available from us (form of availability unspecified).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -8022,13 +8022,13 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="23">
 				<xs:annotation>
-					<xs:documentation>ImpressÃ£o sob-demanda</xs:documentation>
+					<xs:documentation>Impressao sob-demanda</xs:documentation>
 					<xs:documentation>Available from us by print-on-demand.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="30">
 				<xs:annotation>
-					<xs:documentation>Temporariamente indisponÃ­vel</xs:documentation>
+					<xs:documentation>Temporariamente indisponi­vel</xs:documentation>
 					<xs:documentation>Temporarily unavailable: temporarily unavailable from us (reason unspecified) (requires expected date, either as &lt;ExpectedShipDate&gt; (ONIX 2.1) or as &lt;SupplyDate&gt; with &lt;SupplyDateRole&gt; coded '08' (ONIX 3.0), except in exceptional circumstances where no date is known).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -8040,61 +8040,61 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="32">
 				<xs:annotation>
-					<xs:documentation>ReimpressÃ£o</xs:documentation>
+					<xs:documentation>Reimpressao</xs:documentation>
 					<xs:documentation>Temporarily unavailable, reprinting (requires expected date, either as &lt;ExpectedShipDate&gt; (ONIX 2.1) or as &lt;SupplyDate&gt; with &lt;SupplyDateRole&gt; coded '08' (ONIX 3.0), except in exceptional circumstances where no date is known).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="33">
 				<xs:annotation>
-					<xs:documentation>Aguardando reediÃ§Ã£o</xs:documentation>
+					<xs:documentation>Aguardando reedicao</xs:documentation>
 					<xs:documentation>Temporarily unavailable, awaiting reissue (requires the &lt;Reissue&gt; composite, and expected date, either as &lt;ExpectedShipDate&gt; (ONIX 2.1) or as &lt;SupplyDate&gt; with &lt;SupplyDateRole&gt; coded '08' (ONIX 3.0), except in exceptional circumstances where no date is known).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="34">
 				<xs:annotation>
-					<xs:documentation>Temporariamente indisponÃ­vel para venda</xs:documentation>
+					<xs:documentation>Temporariamente indisponivel para venda</xs:documentation>
 					<xs:documentation>May be for quality or technical reasons. Requires expected availability date, either as &lt;ExpectedShipDate&gt; (ONIX 2.1) or as &lt;SupplyDate&gt; with &lt;SupplyDateRole&gt; coded '08' (ONIX 3.0), except in exceptional circumstances where no date is known.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="40">
 				<xs:annotation>
-					<xs:documentation>IndisponÃ­vel por razÃµes especÃ­ficas</xs:documentation>
+					<xs:documentation>Indisponivel por razoes especi­ficas</xs:documentation>
 					<xs:documentation>Not available from us (for any reason).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="41">
 				<xs:annotation>
-					<xs:documentation>IndisponÃ­vel, substituÃ­do por novo produto</xs:documentation>
+					<xs:documentation>Indisponi­vel, substitua­do por novo produto</xs:documentation>
 					<xs:documentation>This product is unavailable, but a successor product or edition is or will be available from us (identify successor in &lt;RelatedProduct&gt;).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="42">
 				<xs:annotation>
-					<xs:documentation>IndisponÃ­vel, outro formato disponÃ­vel</xs:documentation>
+					<xs:documentation>Indisponi­vel, outro formato disponi­vel</xs:documentation>
 					<xs:documentation>This product is unavailable, but the same content is or will be available from us in an alternative format (identify other format product in &lt;RelatedProduct&gt;).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="43">
 				<xs:annotation>
-					<xs:documentation>NÃ£o fornecido por nÃ³s</xs:documentation>
+					<xs:documentation>Nao fornecido por nos</xs:documentation>
 					<xs:documentation>Identify new supplier in &lt;NewSupplier&gt; if possible.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="44">
 				<xs:annotation>
-					<xs:documentation>SolicitaÃ§Ã£o direta</xs:documentation>
+					<xs:documentation>Solicitacao direta</xs:documentation>
 					<xs:documentation>Not available to trade, apply direct to publisher.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="45">
 				<xs:annotation>
-					<xs:documentation>NÃ£o vendido separadamente</xs:documentation>
+					<xs:documentation>Nao vendido separadamente</xs:documentation>
 					<xs:documentation>Must be bought as part of a set (identify set in &lt;RelatedProduct&gt;).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="46">
 				<xs:annotation>
-					<xs:documentation>IndisponÃ­vel para venda</xs:documentation>
+					<xs:documentation>Indisponivel para venda</xs:documentation>
 					<xs:documentation>May be for legal reasons or to avoid giving offence.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -8106,7 +8106,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="48">
 				<xs:annotation>
-					<xs:documentation>IndisponÃ­vel, reimpresso sob-demanda</xs:documentation>
+					<xs:documentation>Indisponi­vel, reimpresso sob-demanda</xs:documentation>
 					<xs:documentation>Out of print, but a print-on-demand edition is or will be available under a different ISBN. Use only when the POD successor has a different ISBN, normally because different trade terms apply.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -8118,31 +8118,31 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="50">
 				<xs:annotation>
-					<xs:documentation>NÃ£o vendido como conjunto</xs:documentation>
+					<xs:documentation>Nao vendido como conjunto</xs:documentation>
 					<xs:documentation>When a collection that is not sold as a set nevertheless has its own ONIX record.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="51">
 				<xs:annotation>
-					<xs:documentation>IndisponÃ­vel, sem produto sucessor ou formato alternativo</xs:documentation>
+					<xs:documentation>Indisponi­vel, sem produto sucessor ou formato alternativo</xs:documentation>
 					<xs:documentation>This product is unavailable, no successor product or alternative format is available or planned. Use this code only when the publisher has indicated the product is out of print.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="52">
 				<xs:annotation>
-					<xs:documentation>IndisponÃ­vel, a editora nÃ£o vende mais esse tipo de produto</xs:documentation>
+					<xs:documentation>Indisponi­vel, a editora nao vende mais esse tipo de produto</xs:documentation>
 					<xs:documentation>This product is unavailable in this market, no successor product or alternative format is available or planned. Use this code when a publisher has indicated the product is permanently unavailable (in this market) while remaining available elsewhere.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="97">
 				<xs:annotation>
-					<xs:documentation>Sem atualizaÃ§Ã£o recente</xs:documentation>
+					<xs:documentation>Sem atualizacao recente</xs:documentation>
 					<xs:documentation>Sender has not received any recent update for this product from the publisher/supplier (for use when the sender is a data aggregator): the definition of 'recent' must be specified by the aggregator, or by agreement between parties to an exchange.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="98">
 				<xs:annotation>
-					<xs:documentation>JÃ¡ nÃ£o recebe atualizaÃ§Ãµes</xs:documentation>
+					<xs:documentation>Ja nao recebe atualizacoes</xs:documentation>
 					<xs:documentation>Sender is no longer receiving any updates from the publisher/supplier of this product (for use when the sender is a data aggregator).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -8326,7 +8326,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="06">
 				<xs:annotation>
-					<xs:documentation>Agente nÃ£o-exclusivo de vendas </xs:documentation>
+					<xs:documentation>Agente na£o-exclusivo de vendas </xs:documentation>
 					<xs:documentation>Publisher's non-exclusive sales agent in a specified territory.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -9609,7 +9609,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="gaa">
 				<xs:annotation>
-					<xs:documentation>GÃ£</xs:documentation>
+					<xs:documentation>Ga£</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
@@ -10005,7 +10005,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="kal">
 				<xs:annotation>
-					<xs:documentation>KalÃ¢tdlisut; Greenlandic</xs:documentation>
+					<xs:documentation>Kala¢tdlisut; Greenlandic</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
@@ -10287,7 +10287,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="lui">
 				<xs:annotation>
-					<xs:documentation>LuiseÃ±o</xs:documentation>
+					<xs:documentation>Luisea±o</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
@@ -10485,7 +10485,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="mos">
 				<xs:annotation>
-					<xs:documentation>MoorÃ©; Mossi</xs:documentation>
+					<xs:documentation>Moora©; Mossi</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
@@ -10623,7 +10623,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="nob">
 				<xs:annotation>
-					<xs:documentation>Norwegian BokmÃ¥l</xs:documentation>
+					<xs:documentation>Norwegian Bokma¥l</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
@@ -10845,7 +10845,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="pro">
 				<xs:annotation>
-					<xs:documentation>ProvenÃ§al, Old (to 1500); Occitan, Old (to 1500)</xs:documentation>
+					<xs:documentation>Provena§al, Old (to 1500); Occitan, Old (to 1500)</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
@@ -10857,7 +10857,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="qar">
 				<xs:annotation>
-					<xs:documentation>AranÃ©s</xs:documentation>
+					<xs:documentation>Arana©s</xs:documentation>
 					<xs:documentation>ONIX local code.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -11331,7 +11331,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="tig">
 				<xs:annotation>
-					<xs:documentation>TigrÃ©</xs:documentation>
+					<xs:documentation>Tigra©</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
@@ -11523,7 +11523,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="vol">
 				<xs:annotation>
-					<xs:documentation>VolapÃ¼k</xs:documentation>
+					<xs:documentation>Volapa¼k</xs:documentation>
 					<xs:documentation>Artificial language.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -13650,7 +13650,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="EIN">
 				<xs:annotation>
-					<xs:documentation>EinheitsÃ¼bersetzung</xs:documentation>
+					<xs:documentation>Einheitsa¼bersetzung</xs:documentation>
 					<xs:documentation>A German translation of the Bible for use in Roman Catholic churches.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -13927,7 +13927,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="NVD">
 				<xs:annotation>
 					<xs:documentation>Nueva Biblia al Dia</xs:documentation>
-					<xs:documentation>A Spanish translation from the original Greek and Hebrew, sponsored by the International Bible Society/Sociedad BÃ­blica Internacional.</xs:documentation>
+					<xs:documentation>A Spanish translation from the original Greek and Hebrew, sponsored by the International Bible Society/Sociedad Ba­blica Internacional.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="NVI">
@@ -14479,7 +14479,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="AX">
 				<xs:annotation>
-					<xs:documentation>Ã…land Islands</xs:documentation>
+					<xs:documentation>a…land Islands</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
@@ -14545,7 +14545,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="BL">
 				<xs:annotation>
-					<xs:documentation>Saint BarthÃ©lemy</xs:documentation>
+					<xs:documentation>Saint Bartha©lemy</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
@@ -14713,7 +14713,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="CW">
 				<xs:annotation>
-					<xs:documentation>CuraÃ§ao</xs:documentation>
+					<xs:documentation>Curaa§ao</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
@@ -15523,7 +15523,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="RE">
 				<xs:annotation>
-					<xs:documentation>RÃ©union</xs:documentation>
+					<xs:documentation>Ra©union</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
@@ -15920,7 +15920,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="04">
 				<xs:annotation>
-					<xs:documentation>BÃ¶rsenverein Verkehrsnummer</xs:documentation>
+					<xs:documentation>Ba¶rsenverein Verkehrsnummer</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
@@ -15969,7 +15969,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="00">
 				<xs:annotation>
-					<xs:documentation>NÃ£o especificado</xs:documentation>
+					<xs:documentation>Na£o especificado</xs:documentation>
 					<xs:documentation>Default.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -15987,7 +15987,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="03">
 				<xs:annotation>
-					<xs:documentation>Distribuidora nÃ£o exclusiva da editora para varejistas.</xs:documentation>
+					<xs:documentation>Distribuidora na£o exclusiva da editora para varejistas.</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
@@ -16035,7 +16035,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="11">
 				<xs:annotation>
-					<xs:documentation>Distribuidor nÃ£o exclusivo para clientes finais.</xs:documentation>
+					<xs:documentation>Distribuidor na£o exclusivo para clientes finais.</xs:documentation>
 					<xs:documentation>Intermediary as non-exclusive distributor direct to consumers and/or institutional customers.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -16135,7 +16135,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="ANG">
 				<xs:annotation>
 					<xs:documentation>Netherlands Antillian Guilder</xs:documentation>
-					<xs:documentation>CuraÃ§ao, Sint Maarten.</xs:documentation>
+					<xs:documentation>Curaa§ao, Sint Maarten.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="AOA">
@@ -16417,7 +16417,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="EUR">
 				<xs:annotation>
 					<xs:documentation>Euro</xs:documentation>
-					<xs:documentation>Andorra, Austria, Belgium, Cyprus, Estonia, Finland, France, Fr Guiana, Fr S Territories, Germany, Greece, Guadeloupe, Holy See (Vatican City), Ireland, Italy, Luxembourg, Martinique, Malta, Mayotte, Monaco, Montenegro, Netherlands, Portugal, RÃ©union, St Pierre and Miquelon, San Marino, Spain.</xs:documentation>
+					<xs:documentation>Andorra, Austria, Belgium, Cyprus, Estonia, Finland, France, Fr Guiana, Fr S Territories, Germany, Greece, Guadeloupe, Holy See (Vatican City), Ireland, Italy, Luxembourg, Martinique, Malta, Mayotte, Monaco, Montenegro, Netherlands, Portugal, Ra©union, St Pierre and Miquelon, San Marino, Spain.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="FIM">
@@ -17035,7 +17035,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="STD">
 				<xs:annotation>
 					<xs:documentation>Dobra</xs:documentation>
-					<xs:documentation>SÃ£o Tome and Principe.</xs:documentation>
+					<xs:documentation>Sa£o Tome and Principe.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="SVC">
@@ -17203,7 +17203,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="XOF">
 				<xs:annotation>
 					<xs:documentation>CFA Franc BCEAO</xs:documentation>
-					<xs:documentation>Benin, Burkina Faso, CÃ´te D'Ivoire, Guinea-Bissau, Mali, Niger, Senegal, Togo.</xs:documentation>
+					<xs:documentation>Benin, Burkina Faso, Ca´te D'Ivoire, Guinea-Bissau, Mali, Niger, Senegal, Togo.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="XPF">
@@ -17524,7 +17524,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="21">
 				<xs:annotation>
 					<xs:documentation>Mother-of-pearl</xs:documentation>
-					<xs:documentation>Spanish 'nÃ¡car'.</xs:documentation>
+					<xs:documentation>Spanish 'na¡car'.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="22">
@@ -17535,7 +17535,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="23">
 				<xs:annotation>
-					<xs:documentation>GÃ©ltex</xs:documentation>
+					<xs:documentation>Ga©ltex</xs:documentation>
 					<xs:documentation>An imitation cloth binding material.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -17911,7 +17911,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="Hano">
 				<xs:annotation>
-					<xs:documentation>Hanunoo (HanunÃ³o)</xs:documentation>
+					<xs:documentation>Hanunoo (Hanuna³o)</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
@@ -18073,7 +18073,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="Lepc">
 				<xs:annotation>
-					<xs:documentation>Lepcha (RÃ³ng)</xs:documentation>
+					<xs:documentation>Lepcha (Ra³ng)</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
@@ -18217,7 +18217,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="Nshu">
 				<xs:annotation>
-					<xs:documentation>NÃ¼shu</xs:documentation>
+					<xs:documentation>Na¼shu</xs:documentation>
 					<xs:documentation>Script is not supported by Unicode.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -19868,7 +19868,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="BN">
 				<xs:annotation>
-					<xs:documentation>Part-work (fascÃ­culo)</xs:documentation>
+					<xs:documentation>Part-work (fasca­culo)</xs:documentation>
 					<xs:documentation>A part-work issued with its own ISBN and intended to be collected and bound into a complete book.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -20198,7 +20198,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="PQ">
 				<xs:annotation>
-					<xs:documentation>Plate (lÃ¡mina)</xs:documentation>
+					<xs:documentation>Plate (la¡mina)</xs:documentation>
 					<xs:documentation>A book-sized (as opposed to poster-sized) sheet, usually in colour or high quality print.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -21129,7 +21129,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="01">
 				<xs:annotation>
-					<xs:documentation>Data de publicaÃ§Ã£o</xs:documentation>
+					<xs:documentation>Data de publicaa§a£o</xs:documentation>
 					<xs:documentation>Nominal date of publication.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -21141,67 +21141,67 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			</xs:enumeration>
 			<xs:enumeration value="09">
 				<xs:annotation>
-					<xs:documentation>Data do anÃºncio pÃºblico</xs:documentation>
+					<xs:documentation>Data do anaºncio paºblico</xs:documentation>
 					<xs:documentation>Date when a new product may be announced to the general public.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="10">
 				<xs:annotation>
-					<xs:documentation>Data do anÃºncio de comÃ©rcio</xs:documentation>
+					<xs:documentation>Data do anaºncio de coma©rcio</xs:documentation>
 					<xs:documentation>Date when a new product may be announced for trade only.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="11">
 				<xs:annotation>
-					<xs:documentation>Data da primeira publicaÃ§Ã£o</xs:documentation>
+					<xs:documentation>Data da primeira publicaa§a£o</xs:documentation>
 					<xs:documentation>Date when the work incorporated in a product was first published.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="12">
 				<xs:annotation>
-					<xs:documentation>Data da Ãºltima reimpressÃ£o</xs:documentation>
+					<xs:documentation>Data da aºltima reimpressa£o</xs:documentation>
 					<xs:documentation>Date when a product was last reprinted.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="13">
 				<xs:annotation>
-					<xs:documentation>Out-of-print / data de exclusÃ£o</xs:documentation>
+					<xs:documentation>Out-of-print / data de exclusa£o</xs:documentation>
 					<xs:documentation>Date when a product was declared out-of-print or deleted.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="16">
 				<xs:annotation>
-					<xs:documentation>Data da Ãºltima reediÃ§Ã£o</xs:documentation>
+					<xs:documentation>Data da aºltima reedia§a£o</xs:documentation>
 					<xs:documentation>Date when a product was last reissued.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="19">
 				<xs:annotation>
-					<xs:documentation>Data de publicaÃ§Ã£o do homÃ³logo de impressÃ£o</xs:documentation>
+					<xs:documentation>Data de publicaa§a£o do homa³logo de impressa£o</xs:documentation>
 					<xs:documentation>Date of publication of a printed book which is the print counterpart to a digital edition.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="20">
 				<xs:annotation>
-					<xs:documentation>Data da primeira publicaÃ§Ã£o na lÃ­ngua original</xs:documentation>
+					<xs:documentation>Data da primeira publicaa§a£o na la­ngua original</xs:documentation>
 					<xs:documentation>Year when the original language version of work incorporated in a product was first published (note, use only when different from code 11).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="21">
 				<xs:annotation>
-					<xs:documentation>Data da prÃ³xima reediÃ§Ã£o</xs:documentation>
+					<xs:documentation>Data da pra³xima reedia§a£o</xs:documentation>
 					<xs:documentation>Date when a product will be reissued.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="22">
 				<xs:annotation>
-					<xs:documentation>Data de disponibilidade esperado apÃ³s retirada temporÃ¡ria</xs:documentation>
+					<xs:documentation>Data de disponibilidade esperado apa³s retirada tempora¡ria</xs:documentation>
 					<xs:documentation>Date when a product that has been temporary withdrawn from sale or recalled for any reason is expected to become available again, eg after correction of quality or technical issues.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="23">
 				<xs:annotation>
-					<xs:documentation>Data de embargo de revisÃ£o</xs:documentation>
+					<xs:documentation>Data de embargo de revisa£o</xs:documentation>
 					<xs:documentation>Date from which reviews of a product may be published eg in newspapers and magazines or online. Provided to the book trade for information only: newspapers and magazines are not expected to be recipients of ONIX metadata.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -22443,7 +22443,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="E117">
 				<xs:annotation>
 					<xs:documentation>BBeB</xs:documentation>
-					<xs:documentation>A Sony proprietary format for use with the Sony Reader and LIBRIÃ© reading devices [File extension .lrf].</xs:documentation>
+					<xs:documentation>A Sony proprietary format for use with the Sony Reader and LIBRIa© reading devices [File extension .lrf].</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="E118">
@@ -23023,7 +23023,7 @@ Use para um registro completo emitido para confirmar a informação antecipadame
 			<xs:enumeration value="02">
 				<xs:annotation>
 					<xs:documentation>Finnish Pocket Book price code</xs:documentation>
-					<xs:documentation>Price Code scheme for Finnish Pocket Books (Pokkareiden hintaryhmÃ¤). Price codes expressed as letters A-J in &lt;PriceCode&gt;.</xs:documentation>
+					<xs:documentation>Price Code scheme for Finnish Pocket Books (Pokkareiden hintaryhma¤). Price codes expressed as letters A-J in &lt;PriceCode&gt;.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 		</xs:restriction>
