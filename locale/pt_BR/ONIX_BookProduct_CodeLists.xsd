@@ -119,49 +119,50 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 		<xs:simpleType name="List1">
 		<xs:annotation>
-			<xs:documentation source="ONIX Code List 1">Notification or update type code</xs:documentation>
+			<xs:documentation source="ONIX Code List 1">Código de tipo de notificação ou atualização</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="01">
 				<xs:annotation>
-					<xs:documentation>Early notification</xs:documentation>
-					<xs:documentation>Use for a complete record issued earlier than approximately six months before publication.</xs:documentation>
+					<xs:documentation>Notificação antecipada</xs:documentation>
+					<xs:documentation>Use para um registro completo emitido mais cedo do que cerca de seis meses antes da publicação.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="02">
 				<xs:annotation>
-					<xs:documentation>Advance notification (confirmed)</xs:documentation>
-					<xs:documentation>Use for a complete record issued to confirm advance information approximately six months before publication; or for a complete record issued after that date and before information has been confirmed from the book-in-hand.</xs:documentation>
+					<xs:documentation>Notificação prévia (confirmada)</xs:documentation>
+					<xs:documentation>
+Use para um registro completo emitido para confirmar a informação antecipadamente cerca de seis meses antes da publicação; ou para um registro completo emitido após essa data e antes que a informação foi confirmada a partir do book-in-hand.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="03">
 				<xs:annotation>
-					<xs:documentation>Notification confirmed on publication</xs:documentation>
-					<xs:documentation>Use for a complete record issued to confirm advance information at or just before actual publication date; or for a complete record issued at any later date.</xs:documentation>
+					<xs:documentation>Notificação confirmada nesta publicação</xs:documentation>
+					<xs:documentation>Use para um registro completo emitido para confirmar a informação antecipadamente ou apenas antes da data de publicação efetiva; ou para um registro completo emitido em qualquer momento posterior.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="04">
 				<xs:annotation>
-					<xs:documentation>Update (partial)</xs:documentation>
-					<xs:documentation>In ONIX 3.0 only, use when sending a 'block update' record. In previous ONIX releases, ONIX updating has generally been by complete record replacement using code 03, and code 04 is not used.</xs:documentation>
+					<xs:documentation>Update (parial)</xs:documentation>
+					<xs:documentation>Em ONIX 3.0 apenas, usar quando enviar um registro 'block update'. Em versões anteriores ONIX, a atualização ONIX tem sido geralmente por substituição completa do registro utilizando o código 03, o código 04 não é usada.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="05">
 				<xs:annotation>
-					<xs:documentation>Delete</xs:documentation>
-					<xs:documentation>Use when sending an instruction to delete a record which was previously issued. Note that a Delete instruction should NOT be used when a product is cancelled, put out of print, or otherwise withdrawn from sale: this should be handled as a change of Publishing status, leaving the receiver to decide whether to retain or delete the record. A Delete instruction is only used when there is a particular reason to withdraw a record completely, eg because it was issued in error.</xs:documentation>
+					<xs:documentation>Excluir</xs:documentation>
+					<xs:documentation>Usar quando enviar uma instrução para excluir um registro que foi emitido anteriormente. Note-se que uma instrução EXCLUIR não deve ser usado quando um produto for cancelado, colocado fora de catálogo, ou retirado de venda: esta deve ser tratada como uma mudança de status Publishing, deixando o receptor decidir se quer manter ou eliminar o registo. Uma instrução Excluir só é utilizado quando há uma razão especial para retirar um registro completamente, por exemplo, porque foi enviado com erro.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="08">
 				<xs:annotation>
-					<xs:documentation>Notice of sale</xs:documentation>
-					<xs:documentation>Notice of sale of a product, from one publisher to another: sent by the publisher disposing of the product.</xs:documentation>
+					<xs:documentation>Anúncio de venda</xs:documentation>
+					<xs:documentation>Anúncio de venda de um produto, de uma editora para outro: enviado pelo editor de deposito do produto.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="09">
 				<xs:annotation>
-					<xs:documentation>Notice of acquisition</xs:documentation>
-					<xs:documentation>Notice of acquisition of a product, by one publisher from another: sent by the acquiring publisher.</xs:documentation>
+					<xs:documentation>Aviso de aquisição</xs:documentation>
+					<xs:documentation>Aviso de aquisição de um produto, de um editor para outro: enviado pela aquisição de editora.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="12">
@@ -186,25 +187,25 @@
 	</xs:simpleType>
 	<xs:simpleType name="List2">
 		<xs:annotation>
-			<xs:documentation source="ONIX Code List 2">Product composition</xs:documentation>
+			<xs:documentation source="ONIX Code List 2">Composição do produto</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="00">
 				<xs:annotation>
-					<xs:documentation>Produto Ãºnico</xs:documentation>
+					<xs:documentation>Produto Unico</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="10">
 				<xs:annotation>
 					<xs:documentation>Varios itens</xs:documentation>
-					<xs:documentation>Multiple-item product retailed as a whole.</xs:documentation>
+					<xs:documentation>Multiplos itens, produto vendido como um todo.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="11">
 				<xs:annotation>
 					<xs:documentation>Colecao de varios itens, vendidos em partes separadas</xs:documentation>
-					<xs:documentation>Used when an ONIX record is required for a collection-as-a-whole, even though it is not currently retailed as such.</xs:documentation>
+					<xs:documentation>Usado quando um registro ONIX é necessário para um coleção-como-um-todo, mesmo que isso não seja atualmente vendido como tal..</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="20">
@@ -223,36 +224,36 @@
 	</xs:simpleType>
 	<xs:simpleType name="List3">
 		<xs:annotation>
-			<xs:documentation source="ONIX Code List 3">Record source type code</xs:documentation>
+			<xs:documentation source="ONIX Code List 3">Código de tipo de fonte de registro</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="00">
 				<xs:annotation>
-					<xs:documentation>Unspecified</xs:documentation>
+					<xs:documentation>Nao especificado</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="01">
 				<xs:annotation>
-					<xs:documentation>Publisher</xs:documentation>
+					<xs:documentation>Editora</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="02">
 				<xs:annotation>
-					<xs:documentation>Publisher's distributor</xs:documentation>
-					<xs:documentation>Use to designate a distributor providing warehousing and fulfillment for a publisher or for a publisher's sales agent, as distinct from a wholesaler.</xs:documentation>
+					<xs:documentation>Distribuidor da editora</xs:documentation>
+					<xs:documentation>Use para designar um distribuidor fornecendo armazenagem e satisfação para um editor ou para o agente de vendas de uma editora, como distinto de um atacadista.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="03">
 				<xs:annotation>
-					<xs:documentation>Wholesaler</xs:documentation>
+					<xs:documentation>Atacadista</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="04">
 				<xs:annotation>
-					<xs:documentation>Bibliographic agency</xs:documentation>
+					<xs:documentation>Agência bibliográfica</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
@@ -264,8 +265,8 @@
 			</xs:enumeration>
 			<xs:enumeration value="06">
 				<xs:annotation>
-					<xs:documentation>Publisher's sales agent</xs:documentation>
-					<xs:documentation>Use for a publisher's sales agent responsible for marketing the publisher's products within a territory, as opposed to a publisher's distributor who fulfills orders but does not market.</xs:documentation>
+					<xs:documentation>Agente de vendas da editora</xs:documentation>
+					<xs:documentation>Use para agente de vendas de uma editora responsável pela comercialização dos produtos da editora dentro de um território, em oposição ao distribuidor de um editor que cumpre ordens, mas não de mercado.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="07">
@@ -276,7 +277,7 @@
 			</xs:enumeration>
 			<xs:enumeration value="08">
 				<xs:annotation>
-					<xs:documentation>Conversion service provider</xs:documentation>
+					<xs:documentation>Prestador de serviços de conversão</xs:documentation>
 					<xs:documentation>Downstream provider of e-publication format conversion service (who might also be a distributor or retailer of the converted e-publication), supplying metadata on behalf of the publisher. The assigned ISBN is taken from the service provider's prefix (whether or not the service provider dedicates that prefix to a particular publisher).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -284,12 +285,12 @@
 	</xs:simpleType>
 	<xs:simpleType name="List5">
 		<xs:annotation>
-			<xs:documentation source="ONIX Code List 5">Product identifier type code</xs:documentation>
+			<xs:documentation source="ONIX Code List 5">Código de tipo de identificador do produto</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="01">
 				<xs:annotation>
-					<xs:documentation>Proprietary</xs:documentation>
+					<xs:documentation>Proprietario</xs:documentation>
 					<xs:documentation>For example, a publisher's or wholesaler's product number.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -343,7 +344,7 @@
 			</xs:enumeration>
 			<xs:enumeration value="17">
 				<xs:annotation>
-					<xs:documentation>Legal deposit number</xs:documentation>
+					<xs:documentation>Número de depósito legal</xs:documentation>
 					<xs:documentation>The number assigned to a publication as part of a national legal deposit process.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -387,18 +388,18 @@
 	</xs:simpleType>
 	<xs:simpleType name="List6">
 		<xs:annotation>
-			<xs:documentation source="ONIX Code List 6">Barcode indicator</xs:documentation>
+			<xs:documentation source="ONIX Code List 6">Indicador de código de barras</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="00">
 				<xs:annotation>
-					<xs:documentation>Not barcoded</xs:documentation>
+					<xs:documentation>Não possui código de barras</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="01">
 				<xs:annotation>
-					<xs:documentation>Barcoded, scheme unspecified</xs:documentation>
+					<xs:documentation>Código de barras, regime não especificado.</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
@@ -850,19 +851,19 @@
 	</xs:simpleType>
 	<xs:simpleType name="List7">
 		<xs:annotation>
-			<xs:documentation source="ONIX Code List 7">Product form code</xs:documentation>
+			<xs:documentation source="ONIX Code List 7">Codigo de produto do formulario</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="00">
 				<xs:annotation>
-					<xs:documentation>Undefined</xs:documentation>
+					<xs:documentation>Nao definido</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="AA">
 				<xs:annotation>
 					<xs:documentation>Audio</xs:documentation>
-					<xs:documentation>Audio recording - detail unspecified.</xs:documentation>
+					<xs:documentation>Audio recording -Detalhe não especificado.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="AB">
@@ -880,19 +881,19 @@
 			<xs:enumeration value="AD">
 				<xs:annotation>
 					<xs:documentation>DAT</xs:documentation>
-					<xs:documentation>Digital audio tape cassette.</xs:documentation>
+					<xs:documentation>Digital audio video-cassette.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="AE">
 				<xs:annotation>
-					<xs:documentation>Audio disc</xs:documentation>
-					<xs:documentation>Audio disc (excluding CD).</xs:documentation>
+					<xs:documentation>Disco de áudio</xs:documentation>
+					<xs:documentation>Disco de áudio (excluindo o CD).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="AF">
 				<xs:annotation>
-					<xs:documentation>Audio tape</xs:documentation>
-					<xs:documentation>Audio tape (open reel tape).</xs:documentation>
+					<xs:documentation>Fita de áudio</xs:documentation>
+					<xs:documentation>Fita de áudio (fita carretel aberto).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="AG">
@@ -915,127 +916,127 @@
 			</xs:enumeration>
 			<xs:enumeration value="AJ">
 				<xs:annotation>
-					<xs:documentation>Downloadable audio file</xs:documentation>
-					<xs:documentation>Audio recording downloadable online.</xs:documentation>
+					<xs:documentation>Arquivo de audio para download</xs:documentation>
+					<xs:documentation>Áudio de gravacao para download on-line.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="AK">
 				<xs:annotation>
-					<xs:documentation>Pre-recorded digital audio player</xs:documentation>
-					<xs:documentation>For example, Playaway audiobook and player: use coding in Product Form Detail to specify the recording format, if required.</xs:documentation>
+					<xs:documentation>Player de audio digital pre-gravados</xs:documentation>
+					<xs:documentation>Por exemplo, Playaway audiobook e jogador: usar codificacao em detalhes de forma de produto para especificar o formato de gravacao, se necessario.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="AL">
 				<xs:annotation>
-					<xs:documentation>Pre-recorded SD card</xs:documentation>
-					<xs:documentation>For example, Audiofy audiobook chip.</xs:documentation>
+					<xs:documentation>Cartao de SD pre-gravado</xs:documentation>
+					<xs:documentation>Por exemplo, Audiofy chip de audiobook.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="AZ">
 				<xs:annotation>
-					<xs:documentation>Other audio format</xs:documentation>
-					<xs:documentation>Other audio format not specified by AB to AL.</xs:documentation>
+					<xs:documentation>Outros formatos de audio</xs:documentation>
+					<xs:documentation>Outros formatos de audio não especificado pelo AB para AL</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="BA">
 				<xs:annotation>
-					<xs:documentation>Book</xs:documentation>
-					<xs:documentation>Book - detail unspecified.</xs:documentation>
+					<xs:documentation>Livro</xs:documentation>
+					<xs:documentation>Livro - detalhe nao especificado.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="BB">
 				<xs:annotation>
-					<xs:documentation>Hardback</xs:documentation>
-					<xs:documentation>Hardback or cased book.</xs:documentation>
+					<xs:documentation>Livro de capa dura</xs:documentation>
+					<xs:documentation>Livro de capa dura ou encaixotado.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="BC">
 				<xs:annotation>
-					<xs:documentation>Paperback / softback</xs:documentation>
-					<xs:documentation>Paperback or other softback book.</xs:documentation>
+					<xs:documentation>Brochura / softback</xs:documentation>
+					<xs:documentation>Brochura ou outro livro encadernado.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="BD">
 				<xs:annotation>
-					<xs:documentation>Loose-leaf</xs:documentation>
-					<xs:documentation>Loose-leaf book.</xs:documentation>
+						<xs:documentation>Folhas soltas</xs:documentation>
+					<xs:documentation>Livro de folhas soltas.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="BE">
 				<xs:annotation>
-					<xs:documentation>Spiral bound</xs:documentation>
-					<xs:documentation>Spiral, comb or coil bound book.</xs:documentation>
+					<xs:documentation>Espiral de limite</xs:documentation>
+					<xs:documentation>Espiral, pente ou bobina ligado livro.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="BF">
 				<xs:annotation>
-					<xs:documentation>Pamphlet</xs:documentation>
-					<xs:documentation>Pamphlet or brochure, stapled; German 'geheftet'.</xs:documentation>
+					<xs:documentation>Panfleto</xs:documentation>
+					<xs:documentation>Panfleto ou brochura, grampeado; Alemão 'geheftet'.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="BG">
 				<xs:annotation>
-					<xs:documentation>Leather / fine binding</xs:documentation>
+					<xs:documentation>Couro / vinculação de bem</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="BH">
 				<xs:annotation>
-					<xs:documentation>Board book</xs:documentation>
-					<xs:documentation>Child's book with all pages printed on board.</xs:documentation>
+					<xs:documentation>Livro de bordo</xs:documentation>
+					<xs:documentation>Livro infantil com todas as páginas impressas a bordo.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="BI">
 				<xs:annotation>
-					<xs:documentation>Rag book</xs:documentation>
-					<xs:documentation>Child's book with all pages printed on textile.</xs:documentation>
+					<xs:documentation>Livro de pano</xs:documentation>
+					<xs:documentation>Livro infantil com todas as páginas impressas em têxteis.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="BJ">
 				<xs:annotation>
-					<xs:documentation>Bath book</xs:documentation>
-					<xs:documentation>Child's book printed on waterproof material.</xs:documentation>
+					<xs:documentation>Livro de banho</xs:documentation>
+					<xs:documentation>Livro infantil impresso em material impermeavel.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="BK">
 				<xs:annotation>
-					<xs:documentation>Novelty book</xs:documentation>
-					<xs:documentation>A book whose novelty consists wholly or partly in a format which cannot be described by any other available code - a 'conventional' format code is always to be preferred; one or more Product Form Detail codes, eg from the B2nn group, should be used whenever possible to provide additional description.</xs:documentation>
+					<xs:documentation>Livro de novidade</xs:documentation>
+					<xs:documentation>Um livro cuja novidade consiste total ou parcialmente em um formato que nao pode ser descrito por qualquer outro codigo disponivel - um codigo de formato 'convencional' e sempre preferivel; um ou mais codigos de produto formulario detalhe, por exemplo, do grupo B2nn, devem ser usados sempre que possivel fornecer descricao adicional.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="BL">
 				<xs:annotation>
-					<xs:documentation>Slide bound</xs:documentation>
-					<xs:documentation>Slide bound book.</xs:documentation>
+					<xs:documentation>Deslize o limite</xs:documentation>
+					<xs:documentation>Slide de livro encadernado.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="BM">
 				<xs:annotation>
-					<xs:documentation>Big book</xs:documentation>
-					<xs:documentation>Extra-large format for teaching etc; this format and terminology may be specifically UK; required as a top-level differentiator.</xs:documentation>
+					<xs:documentation>Grande livro</xs:documentation>
+					<xs:documentation>Extragrande formato para o ensino, etc.; Este formato e terminologia podem ser especificamente UK; necessário como um diferenciador de nível superior.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="BN">
 				<xs:annotation>
-					<xs:documentation>Part-work (fascÃ­culo)</xs:documentation>
-					<xs:documentation>A part-work issued with its own ISBN and intended to be collected and bound into a complete book.</xs:documentation>
+						<xs:documentation>Parte-trabalho (fasciculo)</xs:documentation>
+					<xs:documentation>Um parte-trabalho emitido com seu próprio ISBN e se destina a ser recolhidos e vinculados em um livro completo.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="BO">
 				<xs:annotation>
-					<xs:documentation>Fold-out book or chart</xs:documentation>
-					<xs:documentation>Concertina-folded book or chart, designed to fold to pocket or regular page size: use for German 'Leporello'.</xs:documentation>
+					<xs:documentation>Livro desdobravel ou grafico</xs:documentation>
+					<xs:documentation>Livro sanfona-dobrado ou grafico, projetada para dobrar bolso ou tamanho de pagina normal: use para alemão 'Leporello'.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="BP">
 				<xs:annotation>
-					<xs:documentation>Foam book</xs:documentation>
-					<xs:documentation>A children's book whose cover and pages are made of foam.</xs:documentation>
+					<xs:documentation>Livro de espuma</xs:documentation>
+					<xs:documentation>Infantil livro cuja capa e paginas sao feitas de espuma.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="BZ">
 				<xs:annotation>
-					<xs:documentation>Other book format</xs:documentation>
+					<xs:documentation>Outro formato de livro</xs:documentation>
 					<xs:documentation>Other book format or binding not specified by BB to BP.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
