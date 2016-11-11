@@ -4716,7 +4716,7 @@ Use para um registro completo emitido para confirmar a informacao antecipadament
 			</xs:enumeration>
 			<xs:enumeration value="05">
 				<xs:annotation>
-					<xs:documentation>Graduaa§a£o</xs:documentation>
+					<xs:documentation>Graduaaa£o</xs:documentation>
 					<xs:documentation>For universities and colleges of further and higher education.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -6294,55 +6294,55 @@ Use para um registro completo emitido para confirmar a informacao antecipadament
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="00">
 				<xs:annotation>
-					<xs:documentation>Direitos de venda desconhecido ou na£o declarado</xs:documentation>
+					<xs:documentation>Direitos de venda desconhecido ou nao declarado</xs:documentation>
 					<xs:documentation>May only be used with the ONIX 3 &lt;ROWSalesRightsType&gt; element.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="01">
 				<xs:annotation>
-					<xs:documentation>Para venda sem restria§a£o, com direitos exclusivos dos paa­ses ou territa³rios especificados</xs:documentation>
+					<xs:documentation>Para venda sem restricao, com direitos exclusivos dos paises ou territorios especificados</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="02">
 				<xs:annotation>
-					<xs:documentation>Para venda sem restria§a£o, com direitos na£o exclusivos dos paa­ses ou territa³rios especificados</xs:documentation>
+					<xs:documentation>Para venda sem restriacao, com direitos nao exclusivos dos paises ou territorios especificados</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="03">
 				<xs:annotation>
-					<xs:documentation>Na£o esta¡ a venda nos paa­ses ou territa³rios especificados</xs:documentation>
+					<xs:documentation>Nao estao a venda nos paises ou territorios especificados</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="04">
 				<xs:annotation>
-					<xs:documentation>Na£o esta¡ a  venda nos paa­ses especificados (mas editora deta©m direitos exclusivos desses paa­ses ou territa³rios)</xs:documentation>
+					<xs:documentation>Nao estao a venda nos pai­ses especificados (mas editora detem direitos exclusivos desses pai­ses ou territorios)</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="05">
 				<xs:annotation>
-					<xs:documentation>Na£o esta¡ a  venda nos paa­ses especificados (editora deta©m direitos na£o exclusivos desses paa­ses ou territa³rios)</xs:documentation>
+					<xs:documentation>Nao estao a venda nos pai­ses especificados (editora detem direitos nao exclusivos desses pai­ses ou territorios)</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="06">
 				<xs:annotation>
-					<xs:documentation>Na£o esta¡ a  venda nos paa­ses especificados (Porque a Editora na£o detaªm direitos nesses paa­ses ou territa³rios)</xs:documentation>
+					<xs:documentation>Nao esta¡ a  venda nos paises especificados (Porque a Editora nao detem direitos nesses pai­ses ou territorios)</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="07">
 				<xs:annotation>
-					<xs:documentation>Para venda com direitos exclusivos dos paa­ses ou territa³rios especificados (restria§a£o de vendas aplica¡vel)</xs:documentation>
+					<xs:documentation>Para venda com direitos exclusivos dos pai­ses ou territorios especificados (restriaa£o de vendas aplica¡vel)</xs:documentation>
 					<xs:documentation>Only for use with ONIX 3.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="08">
 				<xs:annotation>
-					<xs:documentation>Para venda com direitos na£o exclusivos dos paa­ses ou territa³rios especificados (restria§a£o de vendas aplica¡vel)</xs:documentation>
+					<xs:documentation>Para venda com direitos nao exclusivos dos pai­ses ou territorios especificados (restricao de vendas aplicavel)</xs:documentation>
 					<xs:documentation>Only for use with ONIX 3.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -10845,7 +10845,7 @@ Use para um registro completo emitido para confirmar a informacao antecipadament
 			</xs:enumeration>
 			<xs:enumeration value="pro">
 				<xs:annotation>
-					<xs:documentation>Provena§al, Old (to 1500); Occitan, Old (to 1500)</xs:documentation>
+					<xs:documentation>Provenaal, Old (to 1500); Occitan, Old (to 1500)</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
@@ -14713,7 +14713,7 @@ Use para um registro completo emitido para confirmar a informacao antecipadament
 			</xs:enumeration>
 			<xs:enumeration value="CW">
 				<xs:annotation>
-					<xs:documentation>Curaa§ao</xs:documentation>
+					<xs:documentation>Curaaao</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>
@@ -16135,7 +16135,7 @@ Use para um registro completo emitido para confirmar a informacao antecipadament
 			<xs:enumeration value="ANG">
 				<xs:annotation>
 					<xs:documentation>Netherlands Antillian Guilder</xs:documentation>
-					<xs:documentation>Curaa§ao, Sint Maarten.</xs:documentation>
+					<xs:documentation>Curaaao, Sint Maarten.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="AOA">
@@ -21129,7 +21129,7 @@ Use para um registro completo emitido para confirmar a informacao antecipadament
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="01">
 				<xs:annotation>
-					<xs:documentation>Data de publicaa§a£o</xs:documentation>
+					<xs:documentation>Data de publicaaa£o</xs:documentation>
 					<xs:documentation>Nominal date of publication.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -21153,7 +21153,7 @@ Use para um registro completo emitido para confirmar a informacao antecipadament
 			</xs:enumeration>
 			<xs:enumeration value="11">
 				<xs:annotation>
-					<xs:documentation>Data da primeira publicaa§a£o</xs:documentation>
+					<xs:documentation>Data da primeira publicaaa£o</xs:documentation>
 					<xs:documentation>Date when the work incorporated in a product was first published.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -21171,25 +21171,25 @@ Use para um registro completo emitido para confirmar a informacao antecipadament
 			</xs:enumeration>
 			<xs:enumeration value="16">
 				<xs:annotation>
-					<xs:documentation>Data da aºltima reedia§a£o</xs:documentation>
+					<xs:documentation>Data da aºltima reediaa£o</xs:documentation>
 					<xs:documentation>Date when a product was last reissued.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="19">
 				<xs:annotation>
-					<xs:documentation>Data de publicaa§a£o do homa³logo de impressa£o</xs:documentation>
+					<xs:documentation>Data de publicaaa£o do homa³logo de impressa£o</xs:documentation>
 					<xs:documentation>Date of publication of a printed book which is the print counterpart to a digital edition.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="20">
 				<xs:annotation>
-					<xs:documentation>Data da primeira publicaa§a£o na la­ngua original</xs:documentation>
+					<xs:documentation>Data da primeira publicaaa£o na la­ngua original</xs:documentation>
 					<xs:documentation>Year when the original language version of work incorporated in a product was first published (note, use only when different from code 11).</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="21">
 				<xs:annotation>
-					<xs:documentation>Data da pra³xima reedia§a£o</xs:documentation>
+					<xs:documentation>Data da pra³xima reediaa£o</xs:documentation>
 					<xs:documentation>Date when a product will be reissued.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
