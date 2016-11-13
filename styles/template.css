@@ -173,6 +173,17 @@ body {
 	background-color: #eee;
 }
 
+.img-associacoes {
+	margin-left: auto;
+	margin-right: auto;
+  width: 40%;
+	position: relative;
+}
+
+.img-associacoes ul li {
+	display: inline-block;
+}
+
 /*
 =============================
 	Responsividade (Desktop)
@@ -201,5 +212,4 @@ body {
 	.logo-container {
 		width: 15%;
 	}
-
 }

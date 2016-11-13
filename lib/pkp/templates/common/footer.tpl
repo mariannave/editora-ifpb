@@ -13,7 +13,12 @@
 </div><!-- pkp_structure_body -->
 
 <div class="pkp_structure_foot">
-
+  <div class="img-associacoes">
+    <ul>
+      <li><a href="http://www.abecbrasil.org.br/novo/"><img src="{$baseUrl}/img/abec.png" id="abec"/></a></li>
+      <li><a href="http://www.abeu.org.br/farol/abeu/"><img src="{$baseUrl}/img/abeu.png" id="abeu"/></a></li>
+    </ul>
+  </div>
 <div class="pkp_structure_subfoot">
 	{if $footerCategories|@count > 0}{* include a section if there are footer link categories defined *}
 		<div class="pkp_structure_content">
@@ -50,5 +55,6 @@
 </div><!-- pkp_structure_page -->
 
 {$additionalFooterData}
+
 </body>
 </html>
