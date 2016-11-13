@@ -18,25 +18,38 @@
 	{rdelim});
 </script>
 <div class="pkp_structure_content" id="headerTemplateContainer">
-	<div class="unit size1of5">
-		<div class="pkp_structure_masthead">
-				{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
-					<h1><a href="{$homeUrl}"><img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" width="{$displayPageHeaderLogo.width|escape}" height="{$displayPageHeaderLogo.height|escape}" {if $displayPageHeaderLogoAltText != ''}alt="{$displayPageHeaderLogoAltText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if} /></a></h1>
-				{elseif $displayPageHeaderTitle && is_array($displayPageHeaderTitle)}
-					<h1><a href="{$homeUrl}"><img src="{$publicFilesDir}/{$displayPageHeaderTitle.uploadName|escape:"url"}" width="{$displayPageHeaderTitle.width|escape}" height="{$displayPageHeaderTitle.height|escape}" {if $displayPageHeaderTitleAltText != ''}alt="{$displayPageHeaderTitleAltText|escape}"{else}alt="{translate key="common.pageHeader.altText"}"{/if} /></a></h1>
-				{elseif $displayPageHeaderTitle}
-					<h1 class="pkp_helpers_text_center pkp_helpers_title_padding"><a href="{$homeUrl}">{$displayPageHeaderTitle}</a></h1>
-				{elseif $alternatePageHeader}
-					<h1 class="pkp_helpers_text_center pkp_helpers_title_padding"><a href="{$homeUrl}">{$alternatePageHeader}</a></h1>
-				{else}
-					<a href="{$homeUrl}"><img src="{$baseUrl}/{$logoImage}" alt="{$applicationName|escape}" title="{$applicationName|escape}" width="180" height="90" /></a>
-				{/if}
-		</div><!-- pkp_structure_masthead -->
-	</div>
-	<div class="unit size4of5">
-		<div class="pkp_structure_navigation">
-			{include file="header/sitenav.tpl"}
-			{include file="header/localnav.tpl"}
+	<div class="page-xheader">
+		{include file="header/sitenav.tpl"}
+		{if $displayPageHeaderTitle && is_array($displayPageHeaderTitle)}
+			<div class="logo-container">
+				<a href="{$homeUrl}">
+					<img src="{$publicFilesDir}/{$displayPageHeaderTitle.uploadName|escape:"url"}"  {if $displayPageHeaderTitleAltText != ''}alt="{$displayPageHeaderTitleAltText|escape}"{else}alt="{translate key="common.pageHeader.altText"}"{/if} />
+				</a>
+			</div>
+		{/if}
+		<div class="title-container">
+			<a class="home-link" href="{$homeUrl}">
+				<h1 class="header-title">Editora IFPB</h1>
+			</a>
+			<p class="header-subtitle">Instituto Federal de Educação, Ciência e Tecnologia da Paraíba</p>
 		</div>
 	</div>
 </div><!-- pkp_structure_content -->
+
+<div class="header-subbar clearfix">
+	<div class="container960">
+		<div class="col-xs-12 col-md-6">
+			{include file="header/localnav.tpl"}
+		</div>
+		<div class="col-xs-12 col-md-6">
+			<div class="pkp_structure_search">
+				<form id="topSearchForm" action="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="results"}" method="post">
+					<fieldset>
+						<input id="topSearchFormField" name="query" value="{$searchQuery|escape}" type="text" title="{translate key="common.searchCatalog"}..." placeholder="{translate key="common.searchCatalog"}..." />
+						<button class="go search-btn"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
