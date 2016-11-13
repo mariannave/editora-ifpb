@@ -1,0 +1,24 @@
+/*	Sidebar titles
+====================*/
+.pkp_structure_sidebar #sidebarBrowse,
+.pkp_structure_sidebar div.block span.blockTitle {
+	font-family: 'Open Sans', Arial, sans-serif !important;
+	text-transform: none;
+	color: #555;
+}
+
+/*Links*/
+.pkp_structure_sidebar div.block a {
+	color: #555;
+}
+
+/*	Borders
+=============*/
+.pkp_structure_sidebar .pkp_helpers_dotted_underline {
+	border-bottom: 2px solid;
+}
+
+.pkp_structure_sidebar div.block {
+	border-top: 0;
+	border-bottom: 2px solid;
+}
