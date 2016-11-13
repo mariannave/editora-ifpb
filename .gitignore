@@ -1,3 +1,5 @@
 .DS_Store
 cache/**/*.php
 cache/**/*.html
+cache/**/*.gz
+cache/**/*.css
