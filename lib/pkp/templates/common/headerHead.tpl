@@ -42,11 +42,15 @@
 	{include file="common/validate.tpl"}
 	{include file="common/plupload.tpl"}
 
+
 	{foreach from=$stylesheets item=styleSheetList}{* For all priority sets STYLE_PRIORITY_... *}
 		{foreach from=$styleSheetList item=cssUrl}{* For all stylesheet URLs within this priority set *}
 			<link rel="stylesheet" href="{$cssUrl}" type="text/css" />
 		{/foreach}
 	{/foreach}
+
+	<link rel="stylesheet" href="{$baseUrl}/styles/style.css" type="text/css">
+	<link rel="stylesheet" href="{$baseUrl}/styles/ajustes.css" type="text/css">
 
 	<!-- Constants for JavaScript -->
 	{include file="common/jsConstants.tpl"}
@@ -61,6 +65,11 @@
 		{include file="common/minifiedScripts.tpl"}
 	{/if}
 
+	<!-- bxSlider Javascript file -->
+	<script src="{$baseUrl}/js/jquery.bxslider.min.js"></script>
+	<!-- bxSlider CSS file -->
+	<link href="{$baseUrl}/styles/jquery.bxslider.css" rel="stylesheet" />
+
 	{$deprecatedJavascript}
 
 	{$deprecatedThemeStyles}
@@ -70,4 +79,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="{$baseUrl}/styles/template.css">
 	<link rel="stylesheet" type="text/css" href="{$baseUrl}/styles/sidebar.css">
+
+	<meta property="creator.productor" content="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/NUMERO"> 
 </head>
