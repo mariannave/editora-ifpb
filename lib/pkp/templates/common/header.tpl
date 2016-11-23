@@ -13,11 +13,11 @@
 {include file="core:common/headerHead.tpl"}
 <body>
 	<div class="page-container">
-		
+
 		<!-- header -->
-		<div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;"> 
+		<div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
 			<ul id="menu-barra-temp" style="list-style:none;">
-				<li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED"><a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a></li> 
+				<li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED"><a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a></li>
 				<li><a style="font-family:sans,sans-serif; text-decoration:none; color:white;" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a></li>
 			</ul>
 		</div>
@@ -38,7 +38,7 @@
 		        <!-- barra de acesso -->
 		        <div class="language-bar">
 		          <ul class="link-list mid-8">
-		          	
+
 		            {if $isUserLoggedIn}
 		            	<li class="item"><a style="text-decoration: none;" href="{if $multipleContexts}{url router=$smarty.const.ROUTE_PAGE context="index" page="admin" op="index"}{else}{url router=$smarty.const.ROUTE_PAGE page="admin" op="index"}{/if}">{translate key="navigation.admin"}</a></li>
 
@@ -53,7 +53,7 @@
 					{/if}
 		          </ul>
 		        </div>
-        
+
 		       <!-- page logo -->
 		        <div class="center-content">
 		          <div class="header-logo">
@@ -63,7 +63,9 @@
 		          </div>
 		          <form class="form-search-header" id="topSearchForm" action="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="results"}" method="post">
 		            <input class="search-input-header ajusteinputsearch" placeholder="Buscar no catálogo" type="text">
-		            <button class="search-button ajustebtnbusca"></button>
+		            <button class="search-button ajustebtnbusca">
+                   <span class="glyphicon glyphicon-search" aria-hidden="true">
+                </button>
 		          </form>
 		        </div>
 
@@ -80,21 +82,21 @@
 		        </a>
 
 		        <a href="https://twitter.com/ifpboficial">
-		        	<div class="social twitter" style="background-image: url('{$baseUrl}/templates/images/icons/twitterrepo.png');">	
+		        	<div class="social twitter" style="background-image: url('{$baseUrl}/templates/images/icons/twitterrepo.png');">
 		        	</div>
 		        </a>
 
 		        <a href="https://pt-br.facebook.com/pages/IFPB-Oficial/261855270518349">
 		          	<div class="social facebook" style="background-image: url('{$baseUrl}/templates/images/icons/facebookrepo.png');">
 		          	</div>
-		        </a>	  		     
+		        </a>
 
 		        </div>
 		    </div>
 
 		      <!-- actions-bar login/logout-->
 		      <div class="actions-bar">
-		        <div class="content-container">		         
+		        <div class="content-container">
 		         		<div class="mid-12">
 		         		<ul class="list-menu fright">
 			         		<li class="item"><a href="#">Equipe</li>
@@ -102,7 +104,7 @@
 			         		<li class="item"><a href="#">Informações ao usuário</li>
 			         		<li class="item"><a href="#">Contato</li>
 			         	</ul>
-			         	</div>			
+			         	</div>
 		        </div>
 		      </div>
     	</header> <!-- fim do header -->
@@ -114,5 +116,3 @@
 
 	  <!-- Meio -->
        		<main class="main-content">
-
-       		
