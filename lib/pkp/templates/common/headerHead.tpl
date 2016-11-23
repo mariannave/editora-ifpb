@@ -48,6 +48,7 @@
 		{/foreach}
 	{/foreach}
 
+  <link rel="stylesheet" type="text/css" href="{$baseUrl}/styles/controllers/style.css">
 	<!-- Constants for JavaScript -->
 	{include file="common/jsConstants.tpl"}
 
@@ -70,4 +71,5 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="{$baseUrl}/styles/template.css">
 	<link rel="stylesheet" type="text/css" href="{$baseUrl}/styles/sidebar.css">
+
 </head>

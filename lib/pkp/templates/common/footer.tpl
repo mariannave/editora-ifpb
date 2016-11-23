@@ -8,17 +8,30 @@
  * Common site footer.
  *}
 
+
+
+
 </div><!-- pkp_structure_main -->
+
 </div><!-- pkp_structure_content -->
+
 </div><!-- pkp_structure_body -->
 
+<div class="img-associacoes">
+
+  <ul class="pkp_structure_content">
+    <li><a href="#"><img src="" alt=""/>PERIODICOS</a></li>
+    <li><a href="http://www.abecbrasil.org.br/novo/">
+      <img src="{$baseUrl}/img/abec.png" alt="Associação Brasileira de Editores Científicos" />
+    </a></li>
+    <li><a href="http://www.abeu.org.br/farol/abeu/"><img src="{$baseUrl}/img/abeu.png" alt="ASSOCIAÇÃO BRASILEIRA DAS EDITORAS UNIVERSITÁRIAS" />
+    </a></li>
+    <li><a href="#"><img src="" alt="" />REPOSITORIO</a></li>
+  </ul>
+</div>
+
 <div class="pkp_structure_foot">
-  <div class="img-associacoes">
-    <ul>
-      <li><a href="http://www.abecbrasil.org.br/novo/"><img src="{$baseUrl}/img/abec.png" id="abec"/></a></li>
-      <li><a href="http://www.abeu.org.br/farol/abeu/"><img src="{$baseUrl}/img/abeu.png" id="abeu"/></a></li>
-    </ul>
-  </div>
+
 <div class="pkp_structure_subfoot">
 	{if $footerCategories|@count > 0}{* include a section if there are footer link categories defined *}
 		<div class="pkp_structure_content">
@@ -41,8 +54,6 @@
 		</div><!-- pkp_structure_content -->
 	{/if}
 	<div class="pkp_structure_content">
-		<a href="{url page="about" op="aboutThisPublishingSystem"}"><img class="pkp_helpers_align_right" alt="{translate key=$packageKey}" src="{$baseUrl}/{$brandImage}"/></a>
-		<a href="{$pkpLink}"><img class="pkp_helpers_align_right pkp_helpers_clear" alt="{translate key="common.publicKnowledgeProject"}" src="{$baseUrl}/lib/pkp/templates/images/pkp_brand.png"/></a>
 	</div><!-- pkp_structure_content -->
 	<div class="pkp_structure_content">
 		{if $pageFooter}{$pageFooter}{/if}
