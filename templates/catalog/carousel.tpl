@@ -30,17 +30,17 @@
 			{assign var="submissionId" value=$publishedMonograph->getId()}
 			{if isset($featuredMonographIds[$submissionId])}
 			<li id="publishedMonograph-{$submissionId}" class="mover">
-				<span class="moverImg"><div><img src="{url router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="cover" submissionId=$publishedMonograph->getId() random=$publishedMonograph->getId()|uniqid}" alt="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" data-caption="#publishedMonograph-{$submissionId}-caption"/></div></span>
-				<div class="details_box" id="publishedMonograph-{$submissionId}-details">
-					<h4>{$publishedMonograph->getLocalizedFullTitle()|strip_unsafe_html}</h4>
-					<div class="pkp_catalog_monograph_authorship">{$publishedMonograph->getAuthorString()|escape}</div>
-					{if $publishedMonograph->getPublicationFormatString()}
+				<a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$submissionId}"><span class="moverImg"><div><img src="{url router=$smarty.const.ROUTE_COMPONENT component="submission.CoverHandler" op="cover" submissionId=$publishedMonograph->getId() random=$publishedMonograph->getId()|uniqid}" alt="{$publishedMonograph->getLocalizedFullTitle()|strip_tags|escape}" data-caption="#publishedMonograph-{$submissionId}-caption"/></div></span></a>
+        <!-- <div class="details_box" id="publishedMonograph-{$submissionId}-details"> -->
+					<!-- <h4>{$publishedMonograph->getLocalizedFullTitle()|strip_unsafe_html}</h4> -->
+					<!-- <div class="pkp_catalog_monograph_authorship">{$publishedMonograph->getAuthorString()|escape}</div> -->
+					<!-- {if $publishedMonograph->getPublicationFormatString()}
 						<div class="pkp_catalog_formats">
 							<strong>{translate key="monograph.carousel.publicationFormats"}</strong><br />
 							{$publishedMonograph->getPublicationFormatString()|escape}
 						</div>
-					{/if}
-					<div class="pkp_catalog_readMore"><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$submissionId}">{translate key="common.plusMore"}</a></div>
+					{/if} -->
+					<!-- <div class="pkp_catalog_readMore"><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="book" path=$submissionId}">{translate key="common.plusMore"}</a></div> -->
 				</div>
 				<div class="pkp_helpers_progressIndicator"></div>
 			</li>
