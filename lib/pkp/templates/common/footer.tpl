@@ -86,10 +86,10 @@
 	        <div class="sub-footer">
 	          <div class="content-container">
 	            <div class="left">
-	              <img src="{$baseUrl}/templates/images/acesso-a-informacao.png" alt="">
+	              <img src="{$baseUrl}/img/acesso-a-informacao.png" alt="">
 	            </div>
 	            <div class="right">
-	              <img src="{$baseUrl}/templates/images/brasil.png" alt="">
+	              <img src="{$baseUrl}/img/brasil.png" alt="">
 	            </div>
 	          </div>
 	        </div>
