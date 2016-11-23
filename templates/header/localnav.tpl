@@ -11,7 +11,7 @@
 {capture assign="publicMenu"}
 	{if $currentPress}
 		{if $enableAnnouncements}
-			<li><a href="{url router=$smarty.const.ROUTE_PAGE page="announcement"}">{translate key="announcement.announcements"}</a></li>
+			<li><a href="{url router=$smarty.const.ROUTE_PAGE page="announcement"}"><{translate key="announcement.announcements"}</a></li>
 		{/if}
 		<li><a href="#">{translate key="navigation.about"}</a>
 			<ul>
@@ -26,7 +26,7 @@
 				{/if}
 				{if not empty($contextInfo.editorialPolicies)}
 					<li><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="editorialPolicies"}">{translate key="about.policies"}</a></li>
-				{/if}	
+				{/if}
 				<li><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="submissions"}">{translate key="about.submissions"}</a></li>
 				{if not empty($contextInfo.sponsorship)}
 					<li><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="sponsorship"}">{translate key="about.pressSponsorship"}</a></li>

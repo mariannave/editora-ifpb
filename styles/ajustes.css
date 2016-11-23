@@ -1,0 +1,196 @@
+/* Cinza claro: #edeff1
+   Cinza médio: #dbdce1
+   Verde logo: #195229 */
+
+html, body {
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+li.title h4 {
+	text-transform: capitalize;
+}
+
+.page-header {
+	color: #fff;
+}
+
+.ajusteform-login label {
+	font-weight: 100;
+}
+
+.ajusteinputsearch {
+	border: 1px solid #ccc;
+	padding-left: 10px;
+}
+
+.fright {
+	float: right;
+}
+
+.ajustebtn {
+	border: 1px solid #000;
+}
+
+.ajustesearch {
+	width: 92%;
+	height: 40px;
+	border: 1px solid #d1d1d1;
+	padding-left: 10px;
+	float: left;
+}
+
+.ajustebtnbusca {
+	background-image: url("../templates/images/search-button.gif");
+}
+
+.page-header::after, .page-header::before {
+	content: none;
+}
+
+.portal .actions-bar {
+    background: #000;
+    margin-top: 0px;
+}
+
+.portal .actions-bar::after {
+    height: 0px;
+}
+
+.header-logo {
+	padding-bottom: 20px;
+}
+
+.titulolink:hover {
+	text-decoration: none;
+}
+
+.title h4 {
+	color: #195229;
+	font-weight: 900;
+}
+
+.mgbot {
+	margin-bottom: 10px;
+}
+
+.page-header.portal {
+    background: radial-gradient(ellipse at center, #3a72bc 1%, #2160bd 100%);
+}
+
+.page-header h1 {
+	font-weight: 900;
+	color: #fff;
+}
+
+.government-bar {
+	border-bottom: 1px solid #000;
+}
+
+.government-bar a {
+	color: #195229;
+}
+
+.page-footer {
+	background-color: #edeff1;
+	color: #195229;
+}
+
+.element-box {
+	padding-top: 10px;
+}
+
+.header-title-box {
+	font-size: 4em;
+	margin-left: 20px;
+	font-weight: 200;
+}
+
+header.page-header {
+	margin: 0px;
+}
+
+.actions-bar {
+	padding-top: 10px;
+}
+
+/* ajustes footer */
+
+footer.page-footer {
+	background: #1659bf;
+	color: #fff;
+}
+
+footer.page-footer h4 {
+	color: #fff;
+}
+
+.sub-footer {
+    background: #0041b2;
+}
+
+/* ajustes header */
+
+.page-header.portal {
+    background: radial-gradient(ellipse at center, #3a72bc 1%, #2160bd 100%);
+}
+
+.page-header h1 {
+	font-weight: 900;
+	color: #fff;
+}
+
+.ajustebtnbusca {
+	background-image: url("../templates/images/search-button.gif");
+}
+
+.ajustebtn {
+	border: 1px solid #000;
+}
+
+.ajusteinputsearch {
+	border: 1px solid #ccc;
+	padding-left: 10px;
+}
+
+.fright {
+	float: right;
+}
+
+.fleft {
+	float: left;
+}
+
+.page-header::after, .page-header::before {
+	content: none;
+}
+
+.portal .actions-bar {
+    background: #0041b2;
+    padding-bottom: 10px;
+    margin-top: 0px;
+}
+
+.page-header {
+	color: #fff;
+}
+
+.page-header a:hover {
+	color: #fff;
+}
+
+.language-bar .link-list {
+	float: right;
+	border-bottom: 1px dotted #fff;
+}
+
+div.media-container {
+	margin-bottom: 5px;
+}
+
+header h1 {
+	padding-top: 0em;
+}
+
+.media-container {
+    margin-top: -40px;
+}
