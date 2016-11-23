@@ -86,10 +86,13 @@
 	        <div class="sub-footer">
 	          <div class="content-container">
 	            <div class="left">
-	              <img src="{$baseUrl}/img/acesso-a-informacao.png" alt="">
+                <a href="http://www.acessoainformacao.gov.br/"></a>
+	              <img src="{$baseUrl}/img/acesso-a-informacao.png" alt="Acesso a Informação">
 	            </div>
 	            <div class="right">
-	              <img src="{$baseUrl}/img/brasil.png" alt="">
+                <a href="http://www.brasil.gov.br/">
+	                 <img src="{$baseUrl}/img/brasil.png" alt="Brasil - Governo Federal">
+                </a>
 	            </div>
 	          </div>
 	        </div>
