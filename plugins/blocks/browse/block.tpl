@@ -8,10 +8,42 @@
  * Common site sidebar menu -- "browse" tools.
  *
  *}
-<div class="block" id="sidebarBrowse">
 
-	<span class="blockTitle pkp_helpers_dotted_underline"><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="newReleases"}">{translate key="navigation.newReleases"}</a></span>
-	<span class="blockTitle">{translate key="plugins.block.browse"}</span>
+
+<ul class="box">
+	<li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="newReleases"}">{translate key="navigation.newReleases"}</a></li>
+  <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog"}">Catálogo</a></li>
+  <li class="item"><a href="#">Notícias</a></li>
+</ul>
+
+<!-- Usuário -->
+{if $isUserLoggedIn}
+<ul class="box">
+  <li class="item header">Usuário</li>
+    <li class="item">
+      <a href="{url router=$smarty.const.ROUTE_PAGE page="dashboard" op="index"}">Painel de Controle</a>
+    </li>
+  <li class="item">
+    <a href="{url router=$smarty.const.ROUTE_PAGE page="user" op="profile"}">Meu Perfil</a>
+  </li>
+  <li class="item">
+    <a href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signOut"}">Sair</a>
+  </li>
+</ul>
+{/if}
+
+<ul class="box">
+  <li class="item header">Sobre</li>
+    <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="contact"}">{translate key="about.contact"}</a></li>
+    <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="description"}">{translate key="about.description"}</a></li>
+    <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="sponsorship"}">{translate key="about.sponsorship"}</a></li>
+    <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="editorialTeam"}">{translate key="about.editorialTeam"}</a></li>
+    <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="editorialPolicies"}">{translate key="about.editorialPolicies"}</a></li>
+    <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="submissions"}">{translate key="about.submissions"}</a></li>
+</ul>
+
+<ul class="box">
+	<li class="item header">{translate key="plugins.block.browse"}</li>
 
 	<form class="pkp_form" action="#">
 		<div id="browseCategoryContainer">
@@ -31,4 +63,4 @@
 			</select>
 		</div>
 	</form>
-</div>
+</ul>

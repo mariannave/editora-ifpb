@@ -7,6 +7,5 @@
  *
  * Common site sidebar menu -- "Developed By" block.
  *}
-<div class="block" id="sidebarDevelopedBy">
-	<a class="blockTitle" href="http://pkp.sfu.ca/omp/" id="developedBy">{translate key="common.openMonographPress"}</a>
-</div>	
+
+	<li class="item"><a  href="http://pkp.sfu.ca/omp/" id="developedBy">{translate key="common.openMonographPress"}</a></li>

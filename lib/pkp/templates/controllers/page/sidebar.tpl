@@ -16,12 +16,12 @@
 {/if}
 
 {if $leftSidebarCode}
-	<div class="pkp_structure_sidebar pkp_structure_sidebar_left mod simple">
+	<div class="page-sidebar left">
 		{$leftSidebarCode}
 	</div><!-- pkp_structure_sidebar_left -->
 {/if}
 {if $rightSidebarCode}
-	<div class="pkp_structure_sidebar pkp_structure_sidebar_right mod simple">
+	<div class="page-sidebar left">
 		{$rightSidebarCode}
 	</div><!-- pkp_structure_sidebar_right -->
 {/if}

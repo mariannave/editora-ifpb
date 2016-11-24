@@ -194,3 +194,24 @@ header h1 {
 .media-container {
     margin-top: -40px;
 }
+
+.element-box, .content-box .header-box, .page-sidebar .box .header{
+	color: #0041b2;
+	border-top: 5px solid #0041b2;
+}
+
+.accessibility-bar a {
+	color: #dcecff;
+}
+
+.accessibility-bar li {
+    line-height: 5px;
+}
+
+.accessibility-bar span {
+		background-color: #fff;
+    color: #3e67b1;
+    padding: 0 3px 0 3px;
+
+
+}
