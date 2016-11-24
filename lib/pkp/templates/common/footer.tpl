@@ -7,61 +7,7 @@
  *
  * Common site footer.
  *}
-
-<<<<<<< HEAD
-
-
-
-</div><!-- pkp_structure_main -->
-
-</div><!-- pkp_structure_content -->
-
-</div><!-- pkp_structure_body -->
-
-<div class="img-associacoes">
-
-  <ul class="pkp_structure_content">
-    <li><a href="#"><img src="" alt=""/>PERIODICOS</a></li>
-    <li><a href="http://www.abecbrasil.org.br/novo/">
-      <img src="{$baseUrl}/img/abec.png" alt="Associação Brasileira de Editores Científicos" />
-    </a></li>
-    <li><a href="http://www.abeu.org.br/farol/abeu/"><img src="{$baseUrl}/img/abeu.png" alt="ASSOCIAÇÃO BRASILEIRA DAS EDITORAS UNIVERSITÁRIAS" />
-    </a></li>
-    <li><a href="#"><img src="" alt="" />REPOSITORIO</a></li>
-  </ul>
-</div>
-
-<div class="pkp_structure_foot">
-
-<div class="pkp_structure_subfoot">
-	{if $footerCategories|@count > 0}{* include a section if there are footer link categories defined *}
-		<div class="pkp_structure_content">
-			{foreach from=$footerCategories item=category name=loop}
-				{assign var=links value=$category->getLinks()}
-				<div class="unit size1of{$footerCategories|@count} {if $smarty.foreach.loop.last}lastUnit{/if}">
-					<h4><a href="{url page="links" op="link" path=$category->getPath()|escape}">{$category->getLocalizedTitle()|strip_unsafe_html}</a></h4>
-					<ul>
-						{foreach from=$links item=link}
-							<li><a href="{$link->getLocalizedUrl()}">{$link->getLocalizedTitle()|strip_unsafe_html}</a></li>
-						{/foreach}
-						{if $links|@count < $maxLinks}
-							{section name=padding start=$links|@count loop=$maxLinks step=1}
-								<li class="pkp_helpers_invisible">&nbsp;</li>
-							{/section}
-						{/if}
-					</ul>
-				</div>
-			{/foreach}
-		</div><!-- pkp_structure_content -->
-	{/if}
-	<div class="pkp_structure_content">
-	</div><!-- pkp_structure_content -->
-	<div class="pkp_structure_content">
-		{if $pageFooter}{$pageFooter}{/if}
-		{call_hook name="Templates::Common::Footer::PageFooter"}
-	</div><!-- pkp_structure_content -->
-</div><!-- pkp_structure_subfoot -->
-=======
+ </ul>
 </main>
 </div>
 </div>
@@ -103,13 +49,12 @@
 	          </ul>
 	          <ul class="footer-box">
 	            <li class="title"><h4>Sobre</h4></li>
-	            <li class="item"><a href="#">Portal do estudante</a></li>
-	            <li class="item"><a href="#">Portal de periódicos</a></li>
-	            <li class="item"><a href="#">Portal do servidor</a></li>
-	            <li class="item"><a href="#">Portal da TI</a></li>
-	            <li class="item"><a href="#">Portal da Transferência</a></li>
+	            <li class="item"><a href="http://www.ifpb.edu.br/portal-do-estudante">Portal do estudante</a></li>
+	            <li class="item"><a href="http://periodicos.ifpb.edu.br/">Portal de periódicos</a></li>
+	            <li class="item"><a href="http://www.ifpb.edu.br/servidor">Portal do servidor</a></li>
+	            <li class="item"><a href="http://www.ifpb.edu.br/ti">Portal da TI</a></li>
+	            <li class="item"><a href="http://www.ifpb.edu.br/transparencia">Portal da Transferência</a></li>
 	          </ul>
->>>>>>> 26b05d988e418d616c18b0fc6a7ef7d45c84271c
 
 	         <ul class="footer-box">
 	            <li class="title"><h4>RSS</h4></li>
@@ -141,10 +86,14 @@
 	        <div class="sub-footer">
 	          <div class="content-container">
 	            <div class="left">
-	              <img src="{$baseUrl}/templates/images/acesso-a-informacao.png" alt="">
+                <a href="http://www.acessoainformacao.gov.br/">
+	                 <img src="{$baseUrl}/img/acesso-a-informacao.png" alt="Acesso a Informação">
+                </a>
 	            </div>
 	            <div class="right">
-	              <img src="{$baseUrl}/templates/images/brasil.png" alt="">
+                <a href="http://www.brasil.gov.br/">
+	                 <img src="{$baseUrl}/img/brasil.png" alt="Brasil - Governo Federal">
+                </a>
 	            </div>
 	          </div>
 	        </div>

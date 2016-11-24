@@ -49,13 +49,9 @@
 		{/foreach}
 	{/foreach}
 
-<<<<<<< HEAD
-  <link rel="stylesheet" type="text/css" href="{$baseUrl}/styles/controllers/style.css">
-=======
 	<link rel="stylesheet" href="{$baseUrl}/styles/style.css" type="text/css">
 	<link rel="stylesheet" href="{$baseUrl}/styles/ajustes.css" type="text/css">
 
->>>>>>> 26b05d988e418d616c18b0fc6a7ef7d45c84271c
 	<!-- Constants for JavaScript -->
 	{include file="common/jsConstants.tpl"}
 
@@ -84,8 +80,5 @@
 	<link rel="stylesheet" type="text/css" href="{$baseUrl}/styles/template.css">
 	<link rel="stylesheet" type="text/css" href="{$baseUrl}/styles/sidebar.css">
 
-<<<<<<< HEAD
-=======
-	<meta property="creator.productor" content="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/NUMERO"> 
->>>>>>> 26b05d988e418d616c18b0fc6a7ef7d45c84271c
+	<meta property="creator.productor" content="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/NUMERO">
 </head>
