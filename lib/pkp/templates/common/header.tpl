@@ -98,12 +98,12 @@
 		      <div class="actions-bar">
 		        <div class="content-container">
 		         		<div class="mid-12">
-		         		<ul class="list-menu fright">
+		         		<!-- <ul class="list-menu fright">
 			         		<li class="item"><a href="#">Equipe</li>
 			         		<li class="item"><a href="#">Missão e Visão</li>
 			         		<li class="item"><a href="#">Informações ao usuário</li>
 			         		<li class="item"><a href="#">Contato</li>
-			         	</ul>
+			         	</ul> -->
 			         	</div>
 		        </div>
 		      </div>
@@ -111,9 +111,9 @@
 
     <div class="page-content">
 	<div class="content-container">
-		{include file="core:common/breadcrumbs.tpl"}
-				{url|assign:fetchSidebarUrl router=$smarty.const.ROUTE_COMPONENT component="page.PageHandler" op="sidebar" params=$additionalArgs escape=false}
-				{load_url_in_div id="sidebarContainer" url=$fetchSidebarUrl}
+		<!-- {include file="core:common/breadcrumbs.tpl"} -->
+		{url|assign:fetchSidebarUrl router=$smarty.const.ROUTE_COMPONENT component="page.PageHandler" op="sidebar" params=$additionalArgs escape=false}
+		{load_url_in_div id="sidebarContainer" url=$fetchSidebarUrl}
 
 	  <!-- Meio -->
-       	<main class="main-content" id="conteudo">
+  <main class="main-content" id="conteudo">

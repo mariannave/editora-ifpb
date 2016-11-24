@@ -197,7 +197,7 @@ header h1 {
 
 .element-box, .content-box .header-box, .page-sidebar .box .header{
 	color: #0041b2;
-	border-top: 5px solid #0041b2;
+	border-top: 5px solid #0041b2 !important;
 }
 
 .accessibility-bar a {
@@ -212,6 +212,14 @@ header h1 {
 		background-color: #fff;
     color: #3e67b1;
     padding: 0 3px 0 3px;
+}
+
+.page-content {
+	margin-top: 80px;
+}
 
 
+.page-sidebar .box .item a {
+	color: #0041b2 !important;
+    text-decoration: none;
 }
