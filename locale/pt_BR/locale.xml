@@ -280,7 +280,7 @@
 	<message key="common.searchCatalog">Busca no catálogo</message>
 	<message key="common.moreInfo">Mais informações</message>
 	<message key="common.plusMore">+ Mais</message>
-	
+
 	<message key="common.listbuilder.completeForm">Preencha o formulário completamente.</message>
 	<message key="common.listbuilder.selectValidOption">Escolha uma opção válida da lista.</message>
 	<message key="common.listbuilder.itemExists">Não é permitido incluir o mesmo item mais de uma vez.</message>

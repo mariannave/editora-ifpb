@@ -7,7 +7,7 @@
  *
  * Common site footer.
  *}
-
+ </ul>
 </main>
 </div>
 </div>
@@ -49,11 +49,11 @@
 	          </ul>
 	          <ul class="footer-box">
 	            <li class="title"><h4>Sobre</h4></li>
-	            <li class="item"><a href="#">Portal do estudante</a></li>
-	            <li class="item"><a href="#">Portal de periódicos</a></li>
-	            <li class="item"><a href="#">Portal do servidor</a></li>
-	            <li class="item"><a href="#">Portal da TI</a></li>
-	            <li class="item"><a href="#">Portal da Transferência</a></li>
+	            <li class="item"><a href="http://www.ifpb.edu.br/portal-do-estudante">Portal do estudante</a></li>
+	            <li class="item"><a href="http://periodicos.ifpb.edu.br/">Portal de periódicos</a></li>
+	            <li class="item"><a href="http://www.ifpb.edu.br/servidor">Portal do servidor</a></li>
+	            <li class="item"><a href="http://www.ifpb.edu.br/ti">Portal da TI</a></li>
+	            <li class="item"><a href="http://www.ifpb.edu.br/transparencia">Portal da Transferência</a></li>
 	          </ul>
 
 	         <ul class="footer-box">

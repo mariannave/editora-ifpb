@@ -28,10 +28,10 @@
       			<!-- barra de acessibilidade -->
 		        <div class="accessibility-bar">
 		          <ul class="link-list first">
-		            <li class="item first"><a href="#">Ir para revistas</a></li>
-		            <li class="item"><a href="#">Ir para menu</a></li>
-		            <li class="item"><a href="#">Ir para busca</a></li>
-		            <li class="item"><a href="#page-footer">Ir para rodapé</a></li>
+		            <li class="item first"><a href="#conteudo">Ir para o conteúdo <span>1</span></a></li>
+		            <li class="item"><a href="#sidebarContainer">Ir para menu <span>2</span></a></li>
+		            <li class="item"><a href="#topSearchForm">Ir para busca <span>3</span></a></li>
+		            <li class="item"><a href="#page-footer">Ir para rodapé <span>4</span></a></li>
 		          </ul>
 		        </div>
 
@@ -112,7 +112,8 @@
     <div class="page-content">
 	<div class="content-container">
 		{include file="core:common/breadcrumbs.tpl"}
-		{include file="core:common/sidebar.tpl"}
+				{url|assign:fetchSidebarUrl router=$smarty.const.ROUTE_COMPONENT component="page.PageHandler" op="sidebar" params=$additionalArgs escape=false}
+				{load_url_in_div id="sidebarContainer" url=$fetchSidebarUrl}
 
 	  <!-- Meio -->
-       		<main class="main-content">
+       	<main class="main-content" id="conteudo">

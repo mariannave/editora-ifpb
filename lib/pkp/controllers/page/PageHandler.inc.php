@@ -102,7 +102,7 @@ class PageHandler extends Handler {
 			}
 		}
 
-		return $templateMgr->fetchJson('controllers/page/header.tpl');
+		return $templateMgr->fetchJson('plugins/blocks/browse/block.tpl');
 	}
 
 	/**

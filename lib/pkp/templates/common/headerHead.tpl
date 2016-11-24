@@ -80,5 +80,5 @@
 	<link rel="stylesheet" type="text/css" href="{$baseUrl}/styles/template.css">
 	<link rel="stylesheet" type="text/css" href="{$baseUrl}/styles/sidebar.css">
 
-	<meta property="creator.productor" content="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/NUMERO"> 
+	<meta property="creator.productor" content="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/NUMERO">
 </head>

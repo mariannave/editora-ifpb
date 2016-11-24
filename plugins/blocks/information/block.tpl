@@ -9,12 +9,11 @@
  *
  *}
 {if !empty($forReaders) || !empty($forAuthors) || !empty($forLibrarians)}
-<div class="block" id="sidebarInformation">
-	<span class="blockTitle">{translate key="plugins.block.information.link"}</span>
-	<ul>
-		{if !empty($forReaders)}<li><a href="{url router=$smarty.const.ROUTE_PAGE page="information" op="readers"}">{translate key="navigation.infoForReaders"}</a></li>{/if}
-		{if !empty($forAuthors)}<li><a href="{url router=$smarty.const.ROUTE_PAGE page="information" op="authors"}">{translate key="navigation.infoForAuthors"}</a></li>{/if}
-		{if !empty($forLibrarians)}<li><a href="{url router=$smarty.const.ROUTE_PAGE page="information" op="librarians"}">{translate key="navigation.infoForLibrarians"}</a></li>{/if}
-	</ul>
-</div>
+<ul class="box">
+    <li class="item header">{translate key="plugins.block.information.link"}</span>
+
+		{if !empty($forReaders)}<li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="information" op="readers"}">{translate key="navigation.infoForReaders"}</a></li>{/if}
+		{if !empty($forAuthors)}<li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="information" op="authors"}">{translate key="navigation.infoForAuthors"}</a></li>{/if}
+		{if !empty($forLibrarians)}<li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="information" op="librarians"}">{translate key="navigation.infoForLibrarians"}</a></li>{/if}
+</ul>
 {/if}
