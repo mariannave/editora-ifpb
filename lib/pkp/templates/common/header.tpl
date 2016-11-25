@@ -12,8 +12,23 @@
 {if !$pageTitleTranslated}{translate|assign:"pageTitleTranslated" key=$pageTitle}{/if}
 {include file="core:common/headerHead.tpl"}
 <body>
+	<script type="text/javascript">
+		// Initialise JS handler.
+		$(function() {ldelim}
+			$('body').pkpHandler(
+				'$.pkp.controllers.SiteHandler',
+				{ldelim}
+					{if $isUserLoggedIn}
+						inlineHelpState: {$initialHelpState},
+					{/if}
+					toggleHelpUrl: '{url|escape:javascript page="user" op="toggleHelp"}',
+					toggleHelpOnText: '{$toggleHelpOnText|escape:"javascript"}',
+					toggleHelpOffText: '{$toggleHelpOffText|escape:"javascript"}',
+					{include file="core:controllers/notification/notificationOptions.tpl"}
+				{rdelim});
+		{rdelim});
+	</script>
 	<div class="page-container">
-
 		<!-- header -->
 		<div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
 			<ul id="menu-barra-temp" style="list-style:none;">
