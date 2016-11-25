@@ -6,6 +6,10 @@ html, body {
 	font-family: 'Open Sans', Arial, sans-serif;
 }
 
+button, input, select, textarea {
+	line-height: normal !important;
+}
+
 li.title h4 {
 	text-transform: capitalize;
 }
