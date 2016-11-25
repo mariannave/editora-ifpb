@@ -116,6 +116,7 @@ header.page-header {
 /* ajustes footer */
 
 footer.page-footer {
+	padding-top: 20px;
 	background: #1659bf;
 	color: #fff;
 }
