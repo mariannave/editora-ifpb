@@ -110,16 +110,20 @@
 		    </div>
 
 		      <!-- actions-bar login/logout-->
+		      <!-- actions-bar login/logout-->
 		      <div class="actions-bar">
 		        <div class="content-container">
-		         		<div class="mid-12">
-		         		<!-- <ul class="list-menu fright">
-			         		<li class="item"><a href="#">Equipe</li>
-			         		<li class="item"><a href="#">Missão e Visão</li>
-			         		<li class="item"><a href="#">Informações ao usuário</li>
-			         		<li class="item"><a href="#">Contato</li>
-			         	</ul> -->
-			         	</div>
+		          	<div class="mid-12">
+		            	<form class="form-login" name="loginform" id="loginform" method="post" action="ifpb/login/signIn">
+				            <label for="tlogin_email">Login:&nbsp;
+				            	<input name="username" id="tlogin_email" tabindex="1" type="text">
+				            </label>
+				            <label for="tlogin_password">Senha:&nbsp;
+				                <input name="password" id="tlogin_password" tabindex="2" type="password">
+				           	</label>
+				            <button type="submit" class="btn btn-submit">Acessar</button>
+				        </form>
+		          	</div>
 		        </div>
 		      </div>
     	</header> <!-- fim do header -->

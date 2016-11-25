@@ -223,3 +223,7 @@ header h1 {
 	color: #0041b2 !important;
     text-decoration: none;
 }
+
+.portal .form-login .btn-submit {
+	color: #0041b2;
+}
