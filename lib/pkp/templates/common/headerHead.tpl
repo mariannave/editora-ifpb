@@ -35,6 +35,10 @@
 		<script src="{$baseUrl}/lib/pkp/js/lib/jquery/plugins/jqueryUi.min.js"></script>
 	{/if}
 
+	<!-- icones -->
+	<link rel="stylesheet" href="{$baseUrl}/img/font-awesome/css/font-awesome.min.css">
+
+
 	<!-- UI elements (menus, forms, etc) -->
 	<script src="{$baseUrl}/lib/pkp/js/lib/superfish/hoverIntent.js"></script>
 	<script src="{$baseUrl}/lib/pkp/js/lib/superfish/superfish.js"></script>
