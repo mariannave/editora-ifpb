@@ -27,26 +27,26 @@
 
 	TERMS AND CONDITIONS OF USE OF THE ONIX PRODUCT INFORMATION MESSAGE XML SCHEMA
 
-	All ONIX standards and documentation are copyright materials, made available 
-	free of charge for general use.  If you use the ONIX International Code Lists, 
+	All ONIX standards and documentation are copyright materials, made available
+	free of charge for general use.  If you use the ONIX International Code Lists,
 	you will be deemed to have accepted these terms and conditions:
 
-	1.  You agree that you will not add to, delete from or amend any version of the 
-	ONIX Product Information Message Schema, or any part of the Schema except for 
+	1.  You agree that you will not add to, delete from or amend any version of the
+	ONIX Product Information Message Schema, or any part of the Schema except for
 	strictly internal use in your own organisation.
 
-	2.  You agree that if you wish to add to, amend, or make extracts of any version 
-	of the Schema for any purpose that is not strictly internal to your own organisation, 
-	you will in the first instance notify EDItEUR and allow EDItEUR to review 
-	and comment on your proposed use, in the interest of securing an orderly 
+	2.  You agree that if you wish to add to, amend, or make extracts of any version
+	of the Schema for any purpose that is not strictly internal to your own organisation,
+	you will in the first instance notify EDItEUR and allow EDItEUR to review
+	and comment on your proposed use, in the interest of securing an orderly
 	development of the Schema for the benefit of other users.
 
-	If you do not accept these terms, you must not use any version of the ONIX Product 
+	If you do not accept these terms, you must not use any version of the ONIX Product
 	Information Message Schema.
 
-	Full copies of all published versions of the latest release of this Schema and all 
-	associated documentation are available from the EDItEUR web site, where may also be 
-	found details of how to contact EDItEUR for advice on the use of this Schema. The URL 
+	Full copies of all published versions of the latest release of this Schema and all
+	associated documentation are available from the EDItEUR web site, where may also be
+	found details of how to contact EDItEUR for advice on the use of this Schema. The URL
 	for the EDItEUR web site is:
 
 	http://www.editeur.org/
@@ -55,43 +55,43 @@
 
 	MODULE REVISION HISTORY (IN REVERSE CHRONOLOGICAL ORDER)
 
-	2012-04-20: Module for public release based upon the ONIX International 
+	2012-04-20: Module for public release based upon the ONIX International
 	            Code lists Issue 17 (April 2012)
 
-	2012-01-23: Module for public release based upon the ONIX International 
+	2012-01-23: Module for public release based upon the ONIX International
 	            Code lists Issue 16 (January 2012)
 
-	2011-10-21: Module for public release based upon the ONIX International 
+	2011-10-21: Module for public release based upon the ONIX International
 	            Code lists Issue 15 (October 2011)
 
-	2011-06-27: Module for public release based upon the ONIX International 
+	2011-06-27: Module for public release based upon the ONIX International
 	            Code lists Issue 14 (June 2011)
 
-	2011-03-23: Module for public release based upon the ONIX International 
+	2011-03-23: Module for public release based upon the ONIX International
 	            Code lists Issue 13 (March 2011)
 
-	2010-10-26: Module for public release based upon the ONIX International 
+	2010-10-26: Module for public release based upon the ONIX International
 	            Code lists Issue 12 (October 2010)
 
-	2010-05-17: Module for public release based upon the ONIX International 
+	2010-05-17: Module for public release based upon the ONIX International
 	            Code lists Issue 11, with correction in List 67 (May 2010)
 
-	2010-03-18: Module for public release based upon the ONIX International 
+	2010-03-18: Module for public release based upon the ONIX International
 	            Code lists Issue 11 (March 2010)
 
-	2009-07-15: Module for public release based upon the ONIX International 
+	2009-07-15: Module for public release based upon the ONIX International
 	            Code lists Issue 10 (July 2009)
 
-	2009-04-09: Module for public release based upon the ONIX International 
+	2009-04-09: Module for public release based upon the ONIX International
 	            Code lists Issue 9 (April 2009)
 
-	2009-02-10: Module for public release based upon the ONIX International 
+	2009-02-10: Module for public release based upon the ONIX International
 	            Code Lists Issue 8+ (revised February 2009)
 
-	2008-12-04: Module for public release based upon the ONIX International 
+	2008-12-04: Module for public release based upon the ONIX International
 	            Code Lists Issue 8+ (December 2008)
 
-	2008-04-22: Module for public release based upon the ONIX International 
+	2008-04-22: Module for public release based upon the ONIX International
 	            Code Lists Issue 8 (April 2008)
 
 	2007-03-27: Module for public release based upon the ONIX International
@@ -106,13 +106,13 @@
 	2005-02-10: Module for public release based upon the ONIX International
 	            Code Lists Issue 4 (February 2005)
 
-	2004-11-10: Module for public release based upon the ONIX International 
+	2004-11-10: Module for public release based upon the ONIX International
 	            Code Lists Issue 3 (August 2004)
 
-	2004-08-10: Second Draft Module based upon the ONIX International 
+	2004-08-10: Second Draft Module based upon the ONIX International
 	            Code Lists Issue 3 (August 2004)
 
-	2003-12-30: First Draft Module based upon the ONIX International 
+	2003-12-30: First Draft Module based upon the ONIX International
 	            Code Lists Issue 2 (December 2003)
 
 -->
@@ -4703,7 +4703,7 @@
 			</xs:enumeration>
 			<xs:enumeration value="03">
 				<xs:annotation>
-					<xs:documentation>Young adult</xs:documentation>
+					<xs:documentation>Jovem adulto</xs:documentation>
 					<xs:documentation>For a teenage audience, not specifically for any educational purpose.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -4733,7 +4733,7 @@
 			</xs:enumeration>
 			<xs:enumeration value="08">
 				<xs:annotation>
-					<xs:documentation>Adult education</xs:documentation>
+					<xs:documentation>Educacao para adultos</xs:documentation>
 					<xs:documentation>For centres providing academic, vocational or recreational courses for adults.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
@@ -4752,7 +4752,7 @@
 			</xs:enumeration>
 			<xs:enumeration value="02">
 				<xs:annotation>
-					<xs:documentation>Proprietary</xs:documentation>
+					<xs:documentation>Proprietario</xs:documentation>
 					<xs:documentation/>
 				</xs:annotation>
 			</xs:enumeration>

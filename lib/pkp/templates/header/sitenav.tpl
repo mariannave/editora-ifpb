@@ -34,4 +34,13 @@
 			<li><a href="{url router=$smarty.const.ROUTE_PAGE page="login"}">{translate key="navigation.login"}</a></li>
 		{/if}
 	</ul>
+  <!--- Barra de acessibilidade --->
+  <div class="accessibility">
+            <ul>
+              <li class="item"><a href="#acontent" id="link-conteudo">Ir para o conteúdo</a></li>
+              <li class="item"><a href="#menu">Ir para menu</a></li>
+              <li class="item"><a href="#busca">Ir para busca</a></li>
+              <li class="item"><a href="#rodape">Ir para rodapé</a></li>
+            </ul>
+          </div>
 </div>
