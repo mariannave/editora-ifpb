@@ -76,8 +76,9 @@
 		            <h1 class="page-name"><a style="text-decoration: none;" href="{$baseUrl}">Editora IFPB</a></h1>
 		            <span>Instituto Federal da Paraíba</span>
 		          </div>
+		          
 		          <form class="form-search-header" id="topSearchForm" action="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="results"}" method="post">
-		            <input class="search-input-header ajusteinputsearch" placeholder="Buscar no catálogo" type="text">
+		            <input id="topSearchFormField" name="query" value="{$searchQuery|escape}" class="search-input-header ajusteinputsearch" placeholder="Buscar no catálogo" type="text">
 		            <button class="search-button ajustebtnbusca">
                    <span class="glyphicon glyphicon-search" aria-hidden="true">
                 </button>
@@ -114,7 +115,6 @@
 		    </div>
 
 		      <!-- actions-bar login/logout-->
-		      <!-- actions-bar login/logout-->
 		      <div class="actions-bar">
 		        <div class="content-container">
 		          	<div class="mid-12">
@@ -134,9 +134,9 @@
 
     <div class="page-content">
 	<div class="content-container">
-		<!-- {include file="core:common/breadcrumbs.tpl"} -->
+		<!-- {include file="core:common/breadcrumbs.tpl" crumb=$crumb} -->
 		{url|assign:fetchSidebarUrl router=$smarty.const.ROUTE_COMPONENT component="page.PageHandler" op="sidebar" params=$additionalArgs escape=false}
 		{load_url_in_div id="sidebarContainer" url=$fetchSidebarUrl}
 
 	  <!-- Meio -->
-  <main class="main-content" id="conteudo">
+  	  <main class="main-content" id="conteudo">
