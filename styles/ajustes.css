@@ -225,5 +225,15 @@ header h1 {
 
 .page-sidebar .box .item a {
 	color: #0041b2 !important;
-    text-decoration: none;
+  text-decoration: none;
+}
+
+
+.img-associacoes ul li {
+	display: inline-block;
+}
+
+.img-link {
+	display: block;
+	width: 100%
 }

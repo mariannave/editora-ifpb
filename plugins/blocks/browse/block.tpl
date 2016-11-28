@@ -76,7 +76,6 @@
             {/if}
         </li>
       {/if}{* ROLE_ID_MANAGER || ROLE_ID_SUB_EDITOR *}
-      <!-- {$publicMenu} -->
     {/if}
 </ul>
 {/if}{* $isUserLoggedIn *}
