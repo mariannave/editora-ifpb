@@ -56,6 +56,11 @@
 	<link rel="stylesheet" href="{$baseUrl}/styles/style.css" type="text/css">
 	<link rel="stylesheet" href="{$baseUrl}/styles/ajustes.css" type="text/css">
 
+  {$additionalHeadData}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
 	<!-- Constants for JavaScript -->
 	{include file="common/jsConstants.tpl"}
 
@@ -78,9 +83,6 @@
 
 	{$deprecatedThemeStyles}
 
-	{$additionalHeadData}
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 	<meta property="creator.productor" content="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/NUMERO">
 </head>

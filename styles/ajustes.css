@@ -239,3 +239,50 @@ header h1 {
 		margin-top: 15px;
 	}
 }
+
+label {
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu {
+  overflow: hidden;
+  max-height: 0;
+  padding: 0;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s ease;
+}
+
+.menu-toggle:checked + label + .menu {
+  max-height: inherit;
+}
+
+.menu-toggle:checked + label .glyphicon-chevron-down:before {
+  content: "\e113" !important;
+}
+
+.item-toggle {
+		/*border-top: 3px solid #0041b2;*/
+    padding: 12px 12px 5px 10px;
+		background: #f0f2f1;
+    font-size: .85em;
+    line-height: 1em;
+    color: #606060;
+    position: relative;
+		margin: 0 !important;
+
+}
+
+.item-toggle span {
+	float: right;
+	margin-right: 10px;
+}
+
+
+#browseCategoryContainer, #browseSeriesContainer {
+	/*margin-bottom: 0px !important;*/
+	margin: 0 !important;
+}
