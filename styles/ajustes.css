@@ -6,10 +6,6 @@ html, body {
 	font-family: 'Open Sans', Arial, sans-serif;
 }
 
-button, input, select, textarea {
-	line-height: normal !important;
-}
-
 li.title h4 {
 	text-transform: capitalize;
 }
@@ -223,22 +219,23 @@ header h1 {
 	margin-top: 80px;
 }
 
-
 .page-sidebar .box .item a {
 	color: #0041b2 !important;
   text-decoration: none;
 }
 
-
-.img-associacoes ul li {
-	display: inline-block;
-}
-
-.img-link {
-	display: block;
-	width: 100%
-}
-
 .portal .form-login .btn-submit {
 	color: #0041b2;
+}
+
+/* ajuste menu superior */
+
+.language-bar {
+	padding-left: 1.5%;
+}
+
+@media (max-width: 768px) {
+	.language-bar {
+		margin-top: 15px;
+	}
 }
