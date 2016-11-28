@@ -118,7 +118,7 @@
 		      <div class="actions-bar">
 		        <div class="content-container">
 		          	<div class="mid-12">
-		            	<form class="form-login" name="loginform" id="loginform" method="post" action="{$baseUrl}/ifpb/login/signIn">
+		            	<form class="form-login" name="loginform" id="loginform" method="post" action="{url router=$smarty.const.ROUTE_PAGE page="login" op="signIn"}">
 				            <label for="tlogin_email">Login:&nbsp;
 				            	<input name="username" id="tlogin_email" tabindex="1" type="text">
 				            </label>
