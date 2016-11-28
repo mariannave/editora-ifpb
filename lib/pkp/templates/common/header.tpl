@@ -55,16 +55,16 @@
 		          <ul class="link-list mid-8">
 
 		            {if $isUserLoggedIn}
-		            	<li class="item"><a style="text-decoration: none;" href="{if $multipleContexts}{url router=$smarty.const.ROUTE_PAGE context="index" page="admin" op="index"}{else}{url router=$smarty.const.ROUTE_PAGE page="admin" op="index"}{/if}">{translate key="navigation.admin"}</a></li>
+		            	<li class="fleft"><a style="text-decoration: none;" href="{if $multipleContexts}{url router=$smarty.const.ROUTE_PAGE context="index" page="admin" op="index"}{else}{url router=$smarty.const.ROUTE_PAGE page="admin" op="index"}{/if}">{translate key="navigation.admin"}</a></li>
 
-						<li class="item"><a style="text-decoration: none;" href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signOut"}">Sair</a></li>
+						<li><a style="text-decoration: none;" href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signOut"}">Sair</a></li>
 						{if $isUserLoggedInAs}
 							<li class="item"><a style="text-decoration: none;" href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signOutAsUser"}">{translate key="user.logOutAs"} {$loggedInUsername|escape}</a></li>
 						{/if}
 					{else}
-						<li class="item fleft"><a style="text-decoration: none;" href="{url router=$smarty.const.ROUTE_PAGE page="user" op="register"}">{translate key="navigation.register"}</a></li>
+						<li class="fleft"><a style="text-decoration: none;" href="{url router=$smarty.const.ROUTE_PAGE page="user" op="register"}">{translate key="navigation.register"}</a></li>
 
-						<li class="item"><a style="text-decoration: none;" href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signIn"}">Acesso</a></li>
+						<li><a style="text-decoration: none;" href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signIn"}">Acesso</a></li>
 					{/if}
 		          </ul>
 		        </div>

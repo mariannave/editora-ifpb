@@ -184,10 +184,6 @@ footer.page-footer h4 {
 	border-bottom: 1px dotted #fff;
 }
 
-.language-bar {
-	padding-left: 1.5%;
-}
-
 div.media-container {
 	margin-bottom: 5px;
 }
@@ -231,4 +227,16 @@ header h1 {
 
 .portal .form-login .btn-submit {
 	color: #0041b2;
+}
+
+/* ajuste menu superior */
+
+.language-bar {
+	padding-left: 1.5%;
+}
+
+@media (max-width: 768px) {
+	.language-bar {
+		margin-top: 15px;
+	}
 }
