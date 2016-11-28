@@ -16,6 +16,7 @@
 <div class="catalogContainer">
 
 {if $series}
+
 	{assign var="image" value=$series->getImage()}
 	{if $series->getLocalizedDescription() || $image}
 		<div class="pkp_catalog_seriesDescription">

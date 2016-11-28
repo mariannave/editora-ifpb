@@ -20,21 +20,27 @@
   <!-- Categorias -->
 	<form class="pkp_form" action="#">
 		<div id="browseCategoryContainer">
-			<select class="applyPlugin selectMenu" size="1" name="browseCategory" onchange="location.href=('{url|escape:"javascript" router=$smarty.const.ROUTE_PAGE page="catalog" op="category" path="CATEGORY_PATH"}'.replace('CATEGORY_PATH', this.options[this.selectedIndex].value))">
-				<option disabled="disabled"{if !$browseBlockSelectedCategory} selected="selected"{/if}>{translate key="plugins.block.browse.category"}</option>
+      <li class="item">{translate key="plugins.block.browse.category"}</li>
 				{iterate from=browseCategories item=browseCategory}
-					<option {if $browseBlockSelectedCategory == $browseCategory->getPath()}selected="selected"{/if} value="{$browseCategory->getPath()|escape}">{if $browseCategory->getParentId()}&nbsp;&nbsp;{/if}{$browseCategory->getLocalizedTitle()|escape}</option>
-				{/iterate}
-			</select>
-		</div>
+          <li class="item">
+            <a href='{url router=$smarty.const.ROUTE_PAGE page="catalog" op="category" path=$browseCategory->getPath()|escape }'>
+              {$browseCategory->getLocalizedTitle()|escape}
+            </a>
+          </li>
+        {/iterate}
+
+				</div>
     <!-- Séries  -->
 		<div id="browseSeriesContainer">
-			<select class="applyPlugin selectMenu" size="1" name="browseSeries" onchange="location.href=('{url|escape:"javascript" router=$smarty.const.ROUTE_PAGE page="catalog" op="series" path="SERIES_PATH"}'.replace('SERIES_PATH', this.options[this.selectedIndex].value))">
-				<option disabled="disabled"{if !$browseBlockSelectedSeries} selected="selected"{/if}>{translate key="plugins.block.browse.series"}</option>
-				{iterate from=browseSeries item=browseSeriesItem}
-					<option {if $browseBlockSelectedSeries == $browseSeriesItem->getPath()}selected="selected"{/if} value="{$browseSeriesItem->getPath()|escape}">{$browseSeriesItem->getLocalizedTitle()|escape}</option>
-				{/iterate}
-			</select>
+				<li class="item">{translate key="plugins.block.browse.series"}</li>
+        {iterate from=browseSeries item=browseSeriesItem}
+    <li class="item">
+      <a href='{url router=$smarty.const.ROUTE_PAGE page="catalog" op="series" path=$browseSeriesItem->getPath()|escape }'>
+        {$browseSeriesItem->getLocalizedTitle()|escape}
+      </a>
+    </li>
+    {/iterate}
+
 		</div>
 	</form>
 </ul>
