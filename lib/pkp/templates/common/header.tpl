@@ -87,22 +87,26 @@
 		    <!-- social media -->
 		    <div class="media-container">
 		        <a href="https://www.youtube.com/user/TVIFPB">
-		        	<div class="social youtube" style="background-image: url('{$baseUrl}/templates/images/icons/youtuberepo.png');">
+		        	<div class="social youtube">
+		        		<i class="fa fa-youtube fa-lg"></i>
 		        	</div>
 		        </a>
 
 		         <a href="#">
-		          	<div class="social feed" style="background-image: url('{$baseUrl}/templates/images/icons/feedrepo.png');">
+		          	<div class="social feed">
+		          		<i class="fa fa-rss-square fa-lg"></i>
 		          	</div>
 		        </a>
 
 		        <a href="https://twitter.com/ifpboficial">
-		        	<div class="social twitter" style="background-image: url('{$baseUrl}/templates/images/icons/twitterrepo.png');">
+		        	<div class="social twitter">
+		        		<i class="fa fa-twitter-square fa-lg"></i>
 		        	</div>
 		        </a>
 
 		        <a href="https://pt-br.facebook.com/pages/IFPB-Oficial/261855270518349">
-		          	<div class="social facebook" style="background-image: url('{$baseUrl}/templates/images/icons/facebookrepo.png');">
+		          	<div class="social facebook">
+		          		<i class="fa fa-facebook-square fa-lg"></i>
 		          	</div>
 		        </a>
 
@@ -110,16 +114,20 @@
 		    </div>
 
 		      <!-- actions-bar login/logout-->
+		      <!-- actions-bar login/logout-->
 		      <div class="actions-bar">
 		        <div class="content-container">
-		         		<div class="mid-12">
-		         		<!-- <ul class="list-menu fright">
-			         		<li class="item"><a href="#">Equipe</li>
-			         		<li class="item"><a href="#">Missão e Visão</li>
-			         		<li class="item"><a href="#">Informações ao usuário</li>
-			         		<li class="item"><a href="#">Contato</li>
-			         	</ul> -->
-			         	</div>
+		          	<div class="mid-12">
+		            	<form class="form-login" name="loginform" id="loginform" method="post" action="{$baseUrl}/ifpb/login/signIn">
+				            <label for="tlogin_email">Login:&nbsp;
+				            	<input name="username" id="tlogin_email" tabindex="1" type="text">
+				            </label>
+				            <label for="tlogin_password">Senha:&nbsp;
+				                <input name="password" id="tlogin_password" tabindex="2" type="password">
+				           	</label>
+				            <button type="submit" class="btn btn-submit">Acessar</button>
+				        </form>
+		          	</div>
 		        </div>
 		      </div>
     	</header> <!-- fim do header -->
