@@ -55,16 +55,16 @@
 		          <ul class="link-list mid-8">
 
 		            {if $isUserLoggedIn}
-		            	<li class="item"><a style="text-decoration: none;" href="{if $multipleContexts}{url router=$smarty.const.ROUTE_PAGE context="index" page="admin" op="index"}{else}{url router=$smarty.const.ROUTE_PAGE page="admin" op="index"}{/if}">{translate key="navigation.admin"}</a></li>
+		            	<li class="fleft"><a style="text-decoration: none;" href="{if $multipleContexts}{url router=$smarty.const.ROUTE_PAGE context="index" page="admin" op="index"}{else}{url router=$smarty.const.ROUTE_PAGE page="admin" op="index"}{/if}">{translate key="navigation.admin"}</a></li>
 
-						<li class="item"><a style="text-decoration: none;" href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signOut"}">Sair</a></li>
+						<li><a style="text-decoration: none;" href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signOut"}">Sair</a></li>
 						{if $isUserLoggedInAs}
 							<li class="item"><a style="text-decoration: none;" href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signOutAsUser"}">{translate key="user.logOutAs"} {$loggedInUsername|escape}</a></li>
 						{/if}
 					{else}
-						<li class="item fleft"><a style="text-decoration: none;" href="{url router=$smarty.const.ROUTE_PAGE page="user" op="register"}">{translate key="navigation.register"}</a></li>
+						<li class="fleft"><a style="text-decoration: none;" href="{url router=$smarty.const.ROUTE_PAGE page="user" op="register"}">{translate key="navigation.register"}</a></li>
 
-						<li class="item"><a style="text-decoration: none;" href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signIn"}">Acesso</a></li>
+						<li><a style="text-decoration: none;" href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signIn"}">Acesso</a></li>
 					{/if}
 		          </ul>
 		        </div>
@@ -76,8 +76,9 @@
 		            <h1 class="page-name"><a style="text-decoration: none;" href="{$baseUrl}">Editora IFPB</a></h1>
 		            <span>Instituto Federal da Paraíba</span>
 		          </div>
+		          
 		          <form class="form-search-header" id="topSearchForm" action="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="results"}" method="post">
-		            <input class="search-input-header ajusteinputsearch" placeholder="Buscar no catálogo" type="text">
+		            <input id="topSearchFormField" name="query" value="{$searchQuery|escape}" class="search-input-header ajusteinputsearch" placeholder="Buscar no catálogo" type="text">
 		            <button class="search-button ajustebtnbusca">
                    <span class="glyphicon glyphicon-search" aria-hidden="true">
                 </button>
@@ -114,7 +115,6 @@
 		    </div>
 
 		      <!-- actions-bar login/logout-->
-		      <!-- actions-bar login/logout-->
 		      <div class="actions-bar">
 		        <div class="content-container">
 		          	<div class="mid-12">
@@ -134,9 +134,9 @@
 
     <div class="page-content">
 	<div class="content-container">
-		<!-- {include file="core:common/breadcrumbs.tpl"} -->
+		<!-- {include file="core:common/breadcrumbs.tpl" crumb=$crumb} -->
 		{url|assign:fetchSidebarUrl router=$smarty.const.ROUTE_COMPONENT component="page.PageHandler" op="sidebar" params=$additionalArgs escape=false}
 		{load_url_in_div id="sidebarContainer" url=$fetchSidebarUrl}
 
 	  <!-- Meio -->
-  <main class="main-content" id="conteudo">
+  	  <main class="main-content" id="conteudo">
