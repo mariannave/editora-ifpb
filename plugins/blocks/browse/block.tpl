@@ -61,6 +61,8 @@
     {if array_intersect(array(ROLE_ID_MANAGER, ROLE_ID_SUB_EDITOR, ROLE_ID_ASSISTANT, ROLE_ID_REVIEWER, ROLE_ID_AUTHOR), $userRoles)}
     <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="dashboard"}">{translate key="navigation.dashboard"}</a></li>
     {/if}
+    <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="user" op="profile"}">Perfil</a></li>
+
     {if $currentPress}
       {if array_intersect(array(ROLE_ID_MANAGER, ROLE_ID_SUB_EDITOR), $userRoles)}
       <!-- Gerenciamento -->
@@ -88,9 +90,8 @@
 
         {/if}{* ROLE_ID_MANAGER || ROLE_ID_SUB_EDITOR *}
         {/if}
-  			<li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="user" op="profile"}">Perfil</a></li>
-  			<li class="item" ><a href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signOut"}">{translate key="user.logOut"}</a></li>
-  			
+  			<li class="item" ><a href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signOut"}"><strong>{translate key="user.logOut"}</strong></a></li>
+
       {/if}{* $isUserLoggedIn *}
 
       <!-- Sobre -->
