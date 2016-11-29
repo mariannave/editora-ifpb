@@ -3,3 +3,4 @@ cache/**/*.php
 cache/**/*.html
 cache/**/*.gz
 cache/**/*.css
+config.inc.php
