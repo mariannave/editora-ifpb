@@ -64,7 +64,6 @@
     {if $currentPress}
       {if array_intersect(array(ROLE_ID_MANAGER, ROLE_ID_SUB_EDITOR), $userRoles)}
       <!-- Gerenciamento -->
-
         <!-- Configurações -->
         {if array_intersect(array(ROLE_ID_MANAGER), $userRoles)}
         <input class="menu-toggle" type="checkbox" id="menu-toggle-4" />
@@ -89,7 +88,9 @@
 
         {/if}{* ROLE_ID_MANAGER || ROLE_ID_SUB_EDITOR *}
         {/if}
-      </ul>
+  			<li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="user" op="profile"}">Perfil</a></li>
+  			<li class="item" ><a href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signOut"}">{translate key="user.logOut"}</a></li>
+  			
       {/if}{* $isUserLoggedIn *}
 
       <!-- Sobre -->
