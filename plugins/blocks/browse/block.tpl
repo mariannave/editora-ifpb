@@ -64,43 +64,43 @@
     <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="user" op="profile"}">Perfil</a></li>
 
     {if $currentPress}
-      {if array_intersect(array(ROLE_ID_MANAGER, ROLE_ID_SUB_EDITOR), $userRoles)}
-      <!-- Gerenciamento -->
-        <!-- Configurações -->
-        {if array_intersect(array(ROLE_ID_MANAGER), $userRoles)}
-        <input class="menu-toggle" type="checkbox" id="menu-toggle-4" />
-        <label class="item item-toggle" for="menu-toggle-4">{translate key="navigation.settings"}<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></label>
-        <ul class="menu">
-          <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="management" op="settings" path="index"}">Todas as configurações</a></li>
-          <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="management" op="settings" path="press"}">{translate key="context.context"}</a></li>
-          <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="management" op="settings" path="website"}">Website</a></li>
-          <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="management" op="settings" path="publication"}">Fluxo de Trabalho</a></li>
-          <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="management" op="settings" path="distribution"}">Distribuição</a></li>
-          <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="management" op="settings" path="access"}">{translate key="navigation.access"}</a></li>
-        </ul>
+    {if array_intersect(array(ROLE_ID_MANAGER, ROLE_ID_SUB_EDITOR), $userRoles)}
+    <!-- Gerenciamento -->
+    <!-- Configurações -->
+    {if array_intersect(array(ROLE_ID_MANAGER), $userRoles)}
+    <input class="menu-toggle" type="checkbox" id="menu-toggle-4" />
+    <label class="item item-toggle" for="menu-toggle-4">{translate key="navigation.settings"}<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></label>
+    <ul class="menu">
+      <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="management" op="settings" path="index"}">Todas as configurações</a></li>
+      <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="management" op="settings" path="press"}">{translate key="context.context"}</a></li>
+      <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="management" op="settings" path="website"}">Website</a></li>
+      <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="management" op="settings" path="publication"}">Fluxo de Trabalho</a></li>
+      <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="management" op="settings" path="distribution"}">Distribuição</a></li>
+      <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="management" op="settings" path="access"}">{translate key="navigation.access"}</a></li>
+    </ul>
 
-        <!-- Ferramentas -->
-        <input class="menu-toggle" type="checkbox" id="menu-toggle-5" />
-        <label class="item item-toggle" for="menu-toggle-5">{translate key="navigation.tools"}<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></label>
-        <ul class="menu">
-          <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="manager" op="importexport"}">{translate key="navigation.tools.importExport"}</a></li>
-          <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="management" op="tools" path="statistics"}">{translate key="navigation.tools.statistics"}</a></li>
-        </ul>
-        {/if}
+    <!-- Ferramentas -->
+    <input class="menu-toggle" type="checkbox" id="menu-toggle-5" />
+    <label class="item item-toggle" for="menu-toggle-5">{translate key="navigation.tools"}<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></label>
+    <ul class="menu">
+      <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="manager" op="importexport"}">{translate key="navigation.tools.importExport"}</a></li>
+      <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="management" op="tools" path="statistics"}">{translate key="navigation.tools.statistics"}</a></li>
+    </ul>
+    {/if}
 
-        {/if}{* ROLE_ID_MANAGER || ROLE_ID_SUB_EDITOR *}
-        {/if}
-  			<li class="item" ><a href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signOut"}"><strong>{translate key="user.logOut"}</strong></a></li>
+    {/if}{* ROLE_ID_MANAGER || ROLE_ID_SUB_EDITOR *}
+    {/if}
+    <li class="item" ><a href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signOut"}"><strong>{translate key="user.logOut"}</strong></a></li>
 
-      {/if}{* $isUserLoggedIn *}
-
-      <!-- Sobre -->
-      <ul class="box">
-        <li class="item header">Sobre</li>
-        <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="contact"}">{translate key="about.contact"}</a></li>
-        <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="description"}">{translate key="about.description"}</a></li>
-        <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="sponsorship"}">Patrocínio da editora</a></li>
-        <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="editorialTeam"}">{translate key="about.editorialTeam"}</a></li>
-        <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="editorialPolicies"}">{translate key="about.editorialPolicies"}</a></li>
-        <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="submissions"}">{translate key="about.submissions"}</a></li>
-      </ul>
+    {/if}{* $isUserLoggedIn *}
+  </ul>
+  <!-- Sobre -->
+  <ul class="box">
+    <li class="item header">Sobre</li>
+    <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="contact"}">{translate key="about.contact"}</a></li>
+    <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="description"}">{translate key="about.description"}</a></li>
+    <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="sponsorship"}">Patrocínio da editora</a></li>
+    <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="editorialTeam"}">{translate key="about.editorialTeam"}</a></li>
+    <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="editorialPolicies"}">{translate key="about.editorialPolicies"}</a></li>
+    <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="submissions"}">{translate key="about.submissions"}</a></li>
+  </ul>
