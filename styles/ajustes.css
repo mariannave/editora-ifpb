@@ -113,6 +113,27 @@ header.page-header {
 	padding-top: 10px;
 }
 
+/* Homepage Banner
+====================*/
+#homepageImage {
+	float: left;
+}
+
+#homepageImage img {
+	width: 100%;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+/* Lançamentos
+====================*/
+#monographListContainer.pkp_catalog_monographs {
+	float: left;
+	display: block;
+	width: 100%;
+	margin-bottom: 50px;
+}
 /* ajustes footer */
 
 footer.page-footer {
@@ -240,6 +261,7 @@ header h1 {
 	}
 }
 
+/*menu lateral*/
 label {
   cursor: pointer;
 }
