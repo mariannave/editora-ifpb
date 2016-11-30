@@ -85,4 +85,5 @@
 
 
 	<meta property="creator.productor" content="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/NUMERO">
+	<link rel="stylesheet" href="{$baseUrl}/styles/omp.css" type="text/css">
 </head>
