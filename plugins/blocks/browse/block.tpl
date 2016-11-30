@@ -11,7 +11,6 @@
 
   <ul class="box">
     <!-- Lançamentos -->
-
     <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="newReleases"}">{translate key="navigation.newReleases"}</a></li>
     <!-- Noticias -->
     <li class="item"><a href="#">Notícias</a></li>
@@ -72,6 +71,7 @@
     <label class="item item-toggle" for="menu-toggle-4">{translate key="navigation.settings"}<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></label>
     <ul class="menu">
       <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="management" op="settings" path="index"}">Todas as configurações</a></li>
+      <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="manageCatalog"}">{translate key="navigation.catalog"}</a></li>
       <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="management" op="settings" path="press"}">{translate key="context.context"}</a></li>
       <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="management" op="settings" path="website"}">Website</a></li>
       <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="management" op="settings" path="publication"}">Fluxo de Trabalho</a></li>
