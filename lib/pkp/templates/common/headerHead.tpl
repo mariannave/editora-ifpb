@@ -14,6 +14,12 @@
 	<meta name="keywords" content="{$metaSearchKeywords|escape}" />
 	<meta name="generator" content="{$applicationName} {$currentVersionString|escape}" />
 	<meta name="viewport" contant="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control"
+  	content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+
 	{$metaCustomHeaders}
 	{if $displayFavicon}<link rel="icon" href="{$faviconDir}/{$displayFavicon.uploadName|escape:"url"}" type="{$displayFavicon.mimeType|escape}" />{/if}
 
@@ -35,10 +41,6 @@
 		<script src="{$baseUrl}/lib/pkp/js/lib/jquery/plugins/jqueryUi.min.js"></script>
 	{/if}
 
-	<!-- icones -->
-	<link rel="stylesheet" href="{$baseUrl}/img/font-awesome/css/font-awesome.min.css">
-
-
 	<!-- UI elements (menus, forms, etc) -->
 	<script src="{$baseUrl}/lib/pkp/js/lib/superfish/hoverIntent.js"></script>
 	<script src="{$baseUrl}/lib/pkp/js/lib/superfish/superfish.js"></script>
@@ -46,17 +48,33 @@
 	{include file="common/validate.tpl"}
 	{include file="common/plupload.tpl"}
 
-
 	{foreach from=$stylesheets item=styleSheetList}{* For all priority sets STYLE_PRIORITY_... *}
 		{foreach from=$styleSheetList item=cssUrl}{* For all stylesheet URLs within this priority set *}
 			<link rel="stylesheet" href="{$cssUrl}" type="text/css" />
 		{/foreach}
 	{/foreach}
 
+  <!-- Constants for JavaScript -->
+	{include file="common/jsConstants.tpl"}
+
+	<!-- Default global locale keys for JavaScript -->
+	{include file="common/jsLocaleKeys.tpl" }
+
+  <!-- Compiled scripts -->
+  {if $useMinifiedJavaScript}
+    <script src="{$baseUrl}/js/pkp.min.js"></script>
+  {else}
+    {include file="common/minifiedScripts.tpl"}
+  {/if}
+
+
+  <!-- icones -->
+  <link rel="stylesheet" href="{$baseUrl}/img/font-awesome/css/font-awesome.min.css">
+
 	<link rel="stylesheet" href="{$baseUrl}/styles/style.css" type="text/css">
 	<link rel="stylesheet" href="{$baseUrl}/styles/ajustes.css" type="text/css">
+  <link rel="stylesheet" href="{$baseUrl}/styles/omp.css" type="text/css">
 
-  {$additionalHeadData}
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
@@ -67,23 +85,10 @@
 	<!-- Default global locale keys for JavaScript -->
 	{include file="common/jsLocaleKeys.tpl" }
 
-	<!-- Compiled scripts -->
-	{if $useMinifiedJavaScript}
-		<script src="{$baseUrl}/js/pkp.min.js"></script>
-	{else}
-		{include file="common/minifiedScripts.tpl"}
-	{/if}
-
-	<!-- bxSlider Javascript file -->
-	<script src="{$baseUrl}/js/jquery.bxslider.min.js"></script>
-	<!-- bxSlider CSS file -->
-	<link href="{$baseUrl}/styles/jquery.bxslider.css" rel="stylesheet" />
-
 	{$deprecatedJavascript}
 
 	{$deprecatedThemeStyles}
 
 
 	<meta property="creator.productor" content="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/NUMERO">
-	<link rel="stylesheet" href="{$baseUrl}/styles/omp.css" type="text/css">
 </head>
