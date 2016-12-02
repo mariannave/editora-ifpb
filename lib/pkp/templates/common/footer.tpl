@@ -14,10 +14,10 @@
 <div class="img-associacoes">
   <div class="content-container">
    <ul class="row">
-     <li class="col-md-3"><a class="img-link" href="http://periodicos.ifpb.edu.br/"><img src="{$baseUrl}/img/periodicos.jpeg" alt="periodicos do ifpb"/></a></li>
-     <li class="col-md-3"><a class="img-link" href="http://www.abecbrasil.org.br/novo/"><img src="{$baseUrl}/img/abec.png" id="abec"/></a></li>
-     <li class="col-md-3"><a class="img-link" href="http://www.abeu.org.br/farol/abeu/"><img src="{$baseUrl}/img/abeu-2.png" id="abeu"/></a></li>
-     <li class="col-md-3"><a class="img-link" href="http://repositorio.ifpb.edu.br/"><img src="{$baseUrl}/img/repositorio.jpg" alt="repositorio do ifpb" /></a></li>
+     <li class="col-md-3 col-xs-6 col-sm-6"><a class="img-link" href="http://periodicos.ifpb.edu.br/"><img src="{$baseUrl}/img/periodicos.jpg" alt="periodicos do ifpb"/></a></li>
+     <li class="col-md-3 col-xs-6 col-sm-6"><a class="img-link" href="http://www.abecbrasil.org.br/novo/"><img src="{$baseUrl}/img/abec.png" id="abec"/></a></li>
+     <li class="col-md-3 col-xs-6 col-sm-6"><a class="img-link" href="http://www.abeu.org.br/farol/abeu/"><img src="{$baseUrl}/img/abeu-2.png" id="abeu"/></a></li>
+     <li class="col-md-3 col-xs-6 col-sm-6"><a class="img-link" href="http://repositorio.ifpb.edu.br/"><img src="{$baseUrl}/img/repositorio.jpg" alt="repositorio do ifpb" /></a></li>
    </ul>
  </div>
 </div>
