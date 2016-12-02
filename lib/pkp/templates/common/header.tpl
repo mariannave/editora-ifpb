@@ -118,8 +118,8 @@
             <div class="actions-bar">
               <div class="content-container">
                 {if $isUserLoggedIn}
-                  <li class="profile"><strong>{translate key="user.hello"}&nbsp;</strong><a href="{url router=$smarty.const.ROUTE_PAGE page="user" op="profile"}">{$loggedInUsername|escape}</a></li>
-                  <li><a href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signOut"}">{translate key="user.logOut"}</a></li>
+                  <li class="profile"><strong>Olá,</strong><a href="{url router=$smarty.const.ROUTE_PAGE page="user" op="profile"}">{$loggedInUsername|escape}</a></li>
+                  <li><a href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signOut"}"><strong>Sair do sistema</strong></a></li>
                   {if $isUserLoggedInAs}
                     <li><a href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signOutAsUser"}">{translate key="user.logOutAs"} {$loggedInUsername|escape}</a></li>
                   {/if}
