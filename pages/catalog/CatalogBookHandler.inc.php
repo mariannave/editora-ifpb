@@ -78,6 +78,7 @@ class CatalogBookHandler extends Handler {
 			$chapters = $chapterDao->getChapters($publishedMonograph->getId());
 			$templateMgr->assign_by_ref('chapters', $chapters->toAssociativeArray());
 		}
+
 		// determine which pubId plugins are enabled.
 		$pubIdPlugins = PluginRegistry::loadCategory('pubIds', true);
 		$enabledPubIdTypes = array();
@@ -134,6 +135,43 @@ class CatalogBookHandler extends Handler {
 			$series = $seriesDao->getById($seriesId, $publishedMonograph->getContextId());
 			$templateMgr->assign('series', $series);
 		}
+
+
+		// Contador de Acessos do livro
+		$press = $request->getPress();
+		$pressId = $press->getId();
+
+		$publishedMonographId = $publishedMonograph->getId();
+
+		$counterAccessDAO =& DAORegistry::getDAO('CountAccessBookDAO');
+		$counterAccessBook = $counterAccessDAO->getAccessById($pressId,$publishedMonographId);
+
+		$cookieID = "cookie-" . $pressId . "-" . $publishedMonographId;
+
+
+		// Se já existir um cookie ele só passa o valor pro template
+		if(isset($_COOKIE[$cookieID])) {
+			$templateMgr->assign('counterAccessBook',$counterAccessBook);
+		}else{
+			if(isset($counterAccessBook)) {
+				// Setando o cookie na página por 24 hrs
+				setcookie($cookieID, "cookie_count", time()+60*60*24);
+				// Adicionando mais uma visita ao contador
+				$newCount = (int)$counterAccessBook + 1;
+				// Adiciona nova entrada de acesso
+				$updateCount = $counterAccessDAO->setUpdateAccess($pressId, $publishedMonographId, $newCount);
+				//Traz a contagem dos acessos atualizada
+				$finalcount = $counterAccessDAO->getAccessById($pressId,$publishedMonographId);
+				// Passando a contagem final pra página
+				$templateMgr->assign('counterAccessBook',$finalcount);
+			} else {
+				//Se não existir uma entrada na tabela ele cria
+				$counterAccessDAO->create($pressId, $publishedMonographId);
+				$finalcount = $counterAccessDAO->getAccessById($pressId,$publishedMonographId);
+				$templateMgr->assign('counterAccessBook',$finalcount);
+			}
+		}
+
 
 		// Display
 		$templateMgr->display('catalog/book/book.tpl');
