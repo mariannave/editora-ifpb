@@ -24,6 +24,9 @@
 	<div class="bookInfoHeader">
 		<h3>{$publishedMonograph->getLocalizedFullTitle()|strip_unsafe_html}</h3>
 		<div class="authorName">{$publishedMonograph->getAuthorString()}</div>
+    <p>
+      <strong>Visitas a este livro :</strong> {$counterAccessBook}
+    </p>
 	</div>
 
 	<div id="bookInfoTabs">
