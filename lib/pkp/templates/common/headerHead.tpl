@@ -13,7 +13,7 @@
 	<meta name="description" content="{$metaSearchDescription|escape}" />
 	<meta name="keywords" content="{$metaSearchKeywords|escape}" />
 	<meta name="generator" content="{$applicationName} {$currentVersionString|escape}" />
-	<meta name="viewport" contant="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Cache-Control"
   	content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
