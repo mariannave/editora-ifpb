@@ -10,6 +10,10 @@
   *}
 
   <ul class="box">
+    <li><a href="http://www.ifpb.edu.br/" target="_blank"><img src="{$baseUrl}/img/ifpb.png" alt="Portal IFPB"/></a> </li>
+  </ul>
+
+  <ul class="box">
     <!-- Lançamentos -->
     <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="newReleases"}">{translate key="navigation.newReleases"}</a></li>
     <!-- Noticias -->
