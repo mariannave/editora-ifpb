@@ -140,6 +140,14 @@
             </div>
           </header> <!-- fim do header -->
 
+          <script type="text/javascript">
+          					// Attach the JS page handler to the main content wrapper.
+          					$(function() {ldelim}
+          						$('div.pkp_structure_main').pkpHandler('$.pkp.controllers.PageHandler');
+          					{rdelim});
+          				</script>
+
+
           <div class="page-content">
             <div class="content-container">
               <!-- {include file="core:common/breadcrumbs.tpl" crumb=$crumb} -->
@@ -148,3 +156,8 @@
 
               <!-- Meio -->
               <main class="main-content" id="conteudo">
+
+                {** allow pages to provide their own titles **}
+                {if !$suppressPageTitle}
+                  <h2 class="title_left">{$pageTitleTranslated}</h2>
+                {/if}
