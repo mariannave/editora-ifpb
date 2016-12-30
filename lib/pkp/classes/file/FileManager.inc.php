@@ -546,6 +546,11 @@ class FileManager {
 			$fileExtension = 'txt';
 		}
 
+		if (!isset($fileExtension) || stristr($fileExtension, 'phtml') || strlen($fileExtension) > 6 || !preg_match('/^\w+$/', $fileExtension)) {
+			$fileExtension = 'txt';
+		}
+
+
 		return $fileExtension;
 	}
 }
