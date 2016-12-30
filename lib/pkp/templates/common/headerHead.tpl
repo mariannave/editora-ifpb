@@ -87,6 +87,7 @@
 
 	{$deprecatedThemeStyles}
 
+  {$additionalHeadData}
 
 	<meta property="creator.productor" content="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/NUMERO">
 </head>
