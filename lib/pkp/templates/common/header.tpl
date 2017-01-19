@@ -73,7 +73,7 @@
             <div class="center-content">
               <div class="header-logo">
                 <span>Portal da</span>
-                <h1 class="page-name"><a style="text-decoration: none;" href="{$baseUrl}">Editora IFPB</a></h1>
+                <h1 class="page-name"><a style="text-decoration: none;" href="{$baseUrl}">Editora {$pageTitleTranslated}</a></h1>
                 <span>Instituto Federal da Paraíba</span>
               </div>
 
