@@ -73,13 +73,11 @@
             <div class="center-content">
               <div class="header-logo">
                 <span>Portal da</span>
-                <h1 class="page-name">
-                {if $pageTitleTranslated == "IFPB"}
-                <a style="text-decoration: none;" href="{$baseUrl}">Editora IFPB</a></h1>
+                <h1 class="page-name"><a style="text-decoration: none;" href="http://editora.ifpb.edu.br/index.php/ifpb">{$displayPageHeaderTitle}</a></h1>
+                {if $displayPageHeaderTitle == "Editora IFPB"}
                   <span>Instituto Federal da Paraíba</span>
                 {/if}
-                {if $pageTitleTranslated == "UEPB"}
-                <a style="text-decoration: none;" href="http://editora.ifpb.edu.br/index.php/uepb">Editora UEPB </a></h1>
+                {if $displayPageHeaderTitle == "EDUEPB"}
                   <span>Universidade Estadual da Paraíba</span>
                 {/if}
               </div>
