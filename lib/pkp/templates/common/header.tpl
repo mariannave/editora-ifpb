@@ -78,6 +78,7 @@
                   <span>Instituto Federal da Paraíba</span>
                 {/if}
                 {if $displayPageHeaderTitle == "EDUEPB"}
+                <br>
                   <h1 class="page-name"><a style="text-decoration: none;" href="http://editora.ifpb.edu.br/index.php/uepb">{$displayPageHeaderTitle}</a></h1>
                   <span>Universidade Estadual da Paraíba</span>
                 {/if}
@@ -91,30 +92,31 @@
               </div>
 
               <!-- social media -->
-              <div class="media-container">
-                <a href="https://www.youtube.com/user/TVIFPB">
-                  <div class="social youtube">
-                    <i class="fa fa-youtube fa-lg"></i>
-                  </div>
-                </a>
+               <div class="media-container">
+                 <a href="https://www.facebook.com/EDITORAIFPB/">
+                   <div class="social facebook">
+                     <i class="fa fa-facebook-square fa-lg"></i>
+                   </div>
+                 </a>
 
-                <a href="#">
-                  <div class="social feed">
-                    <i class="fa fa-rss-square fa-lg"></i>
-                  </div>
-                </a>
+                 <a href="#">
+                    <div class="social youtube">
+                      <i class="fa fa-youtube fa-lg"></i>
+                    </div>
+                  </a>
 
-                <a href="https://twitter.com/ifpboficial">
-                  <div class="social twitter">
-                    <i class="fa fa-twitter-square fa-lg"></i>
-                  </div>
-                </a>
+                  <a href="#">
+                    <div class="social feed">
+                      <i class="fa fa-rss-square fa-lg"></i>
+                    </div>
+                  </a>
 
-                <a href="https://www.facebook.com/EDITORAIFPB/">
-                  <div class="social facebook">
-                    <i class="fa fa-facebook-square fa-lg"></i>
-                  </div>
-                </a>
+                  <a href="#">
+                    <div class="social twitter">
+                      <i class="fa fa-twitter-square fa-lg"></i>
+                    </div>
+                  </a>
+
 
               </div>
             </div>
