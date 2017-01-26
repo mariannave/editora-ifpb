@@ -72,16 +72,16 @@
             <!-- page logo -->
             <div class="center-content">
               <div class="header-logo">
-                <span>Portal da</span>
-                <h1 class="page-name"><a style="text-decoration: none;" href="http://editora.ifpb.edu.br/index.php/ifpb">{$displayPageHeaderTitle}</a></h1>
                 {if $displayPageHeaderTitle == "Editora IFPB"}
+                  <span>Portal da</span>
+                  <h1 class="page-name"><a style="text-decoration: none;" href="http://editora.ifpb.edu.br/index.php/ifpb">{$displayPageHeaderTitle}</a></h1>
                   <span>Instituto Federal da Paraíba</span>
                 {/if}
                 {if $displayPageHeaderTitle == "EDUEPB"}
+                  <h1 class="page-name"><a style="text-decoration: none;" href="http://editora.ifpb.edu.br/index.php/uepb">{$displayPageHeaderTitle}</a></h1>
                   <span>Universidade Estadual da Paraíba</span>
                 {/if}
               </div>
-
               <form class="form-search-header" id="topSearchForm" action="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="results"}" method="post">
                 <input id="topSearchFormField" name="query" value="{$searchQuery|escape}" class="search-input-header ajusteinputsearch" placeholder="Buscar no catálogo" type="text">
                 <button class="search-button ajustebtnbusca">
