@@ -10,7 +10,12 @@
   *}
 
   <ul class="box">
-    <li><a href="http://www.ifpb.edu.br/" target="_blank"><img src="{$baseUrl}/img/ifpb.png" alt="Portal IFPB"/></a> </li>
+    {if $displayPageHeaderTitle == "Editora IFPB"}
+      <li><a href="http://www.ifpb.edu.br/" target="_blank"><img src="{$baseUrl}/img/ifpb.png" alt="Portal IFPB"/></a></li>
+    {/if}
+    {if $displayPageHeaderTitle == "EDUEPB"}
+      <li><a href="http://http://www.uepb.edu.br/" target="_blank"><img src="{$baseUrl}/img/eduepb.jpeg" alt="Editora EDUEPB"/></a> </li>
+    {/if}
   </ul>
 
   <ul class="box">
