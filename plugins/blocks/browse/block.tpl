@@ -102,14 +102,4 @@
     <li class="item" ><a href="{url router=$smarty.const.ROUTE_PAGE page="login" op="signOut"}"><strong>{translate key="user.logOut"}</strong></a></li>
 
     {/if}{* $isUserLoggedIn *}
-  </ul>
-  <!-- Sobre -->
-  <ul class="box">
-    <li class="item header">Sobre</li>
-    <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="contact"}">{translate key="about.contact"}</a></li>
-    <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="description"}">{translate key="about.description"}</a></li>
-    <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="sponsorship"}">Patrocínio da editora</a></li>
-    <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="editorialTeam"}">{translate key="about.editorialTeam"}</a></li>
-    <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="editorialPolicies"}">{translate key="about.editorialPolicies"}</a></li>
-    <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="submissions"}">{translate key="about.submissions"}</a></li>
-  </ul>
+  </ul> 
