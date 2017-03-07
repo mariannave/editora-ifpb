@@ -22,7 +22,7 @@
     <!-- Lançamentos -->
     <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="newReleases"}">{translate key="navigation.newReleases"}</a></li>
     <!-- Noticias -->
-    <li class="item"><a href="#">Notícias</a></li>
+    <li class="item"><a href="{url router=$smarty.const.ROUTE_PAGE page="announcement" op="index"}">Notícias</a></li>
   </ul>
 
   <!-- Catálogo   -->
