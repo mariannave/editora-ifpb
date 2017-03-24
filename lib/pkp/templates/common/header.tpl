@@ -163,7 +163,7 @@
 
               <!-- Meio -->
               <main class="main-content" id="conteudo">
-                {include file="core:common/menu-drop.tpl"}
+              
                   
                 {** allow pages to provide their own titles **}
                 {if !$suppressPageTitle}
