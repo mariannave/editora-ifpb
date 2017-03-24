@@ -121,6 +121,10 @@
 	.barra-drop {
 		display: block;
 	}
+
+	.portal .actions-bar {
+    	margin-top: 20px;
+	}
 }
 
 /*===== fim dropdown ======*/
