@@ -163,7 +163,8 @@
 
               <!-- Meio -->
               <main class="main-content" id="conteudo">
-
+                {include file="core:common/menu-drop.tpl"}
+                  
                 {** allow pages to provide their own titles **}
                 {if !$suppressPageTitle}
                   <h2 class="title_left">{$pageTitleTranslated}</h2>

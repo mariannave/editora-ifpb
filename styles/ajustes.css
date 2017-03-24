@@ -318,3 +318,128 @@ label {
 .plupload input[type=file]{
 	font-size: 10px !important;
 }
+
+/* =========== DROPDOWN MENU =========== */
+.barra-drop {
+	width: 100%;
+	height: auto;
+	position: relative;
+	background-color: #1659bf;
+	border-radius: 5px;
+	padding: 5px;
+	display: none;
+}
+
+.btn-drop {
+	width: 30%;
+	height: auto;
+	background-color: #e4e4e4;
+	color: #3a72bc;
+	border: none;
+	border-radius: 5px;
+	position: relative;
+	float: right;
+	padding: 5px;
+	font-weight: 600;
+}
+
+.content-drop {
+	width: 100%;
+	height: auto;
+	clear: both;
+	display: none;
+}
+
+.link-drop {
+	background-color: #eee;
+	width: auto;
+	height: auto;
+	color: #3a72bc;
+}
+
+.link-drop li.item {
+	margin-bottom: 5px;
+	border-bottom: 1px dotted #eee;
+	padding-bottom: 5px;
+}
+
+.select-drop {
+	height: auto;
+	width: auto;
+}
+
+.select-drop li {
+	background-color: #f1f1f1;
+	padding: 15px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	color: #3a72bc;
+	font-size: 13pt;
+	font-weight: 600;
+}
+
+.select-drop li.ulti {
+	margin-bottom: 5px;
+}
+
+.subitem-drop {
+	background-color: #fff;
+	padding: 10px;
+	display: none;
+	margin-top: -10px;
+}
+
+.subitem-drop li {
+	background-color: #fff;
+	border-bottom: 1px dotted #ddd;
+	padding: 10px;
+	margin: 0px;
+}
+
+.subitem-drop li a {
+	background-color: #fff;
+	color: #000;
+	font-size: 11pt;
+	text-decoration: none;
+	font-weight: 100;
+}
+
+.subitem-drop li a:hover {
+	text-decoration: underline;
+}
+
+.links-drop {
+	background-color: #fff;
+	width: 100%;
+	height: auto;
+}
+
+.links-drop ul li {
+	border-bottom: 1px dotted #ccc;
+	padding: 10px;
+}
+
+.links-drop ul li a {
+	color: #000;
+	font-size: 11pt;
+	text-decoration: none;
+	font-weight: 100;
+}
+
+.links-drop ul li a:hover {
+	text-decoration: underline;
+}
+
+.links-drop ul li.ult {
+	border: none;
+}
+
+.clear { clear: both; }
+
+@media screen and (max-width: 768px) {
+	.barra-drop {
+		display: block;
+	}
+}
+
+/*===== fim dropdown ======*/
