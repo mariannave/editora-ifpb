@@ -50,6 +50,7 @@ li.title h4 {
 .portal .actions-bar {
     background: #000;
     margin-top: 0px;
+    margin-bottom: 20px;
 }
 
 .portal .actions-bar::after {
