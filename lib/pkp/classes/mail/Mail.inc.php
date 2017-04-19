@@ -445,7 +445,7 @@ class Mail extends DataObject {
 		//retirar esses trechos do corpo do email
 		$mailBody = str_replace('A seguinte mensagem será enviada em nome de {$contextName}', '', $mailBody);
 
-		$mailBody = str_replace('________________________________________________________________________{$contextName}http://localhost:9000/index.php/ifpb', '', $mailBody);
+		$mailBody = str_replace('________________________________________________________________________{$contextName}http://editora.ifpb.edu.br/index.php/ifpb', '', $mailBody);
 
 		$mailBody = str_replace('________________________________________________________________________', '', $mailBody);
 		//----------------------------------------
