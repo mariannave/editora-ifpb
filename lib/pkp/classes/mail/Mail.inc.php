@@ -434,13 +434,21 @@ class Mail extends DataObject {
 	function send() {
 		if (HookRegistry::call('Mail::send', array($this))) return;
 
-		// Replace all the private parameters for this message.
+		//Replace all the private parameters for this message.
 		$mailBody = $this->getBody();
 		if (is_array($this->privateParams)) {
 			foreach ($this->privateParams as $name => $value) {
 				$mailBody = str_replace($name, $value, $mailBody);
 			}
 		}
+
+		//retirar esses trechos do corpo do email
+		$mailBody = str_replace('A seguinte mensagem será enviada em nome de {$contextName}', '', $mailBody);
+
+		$mailBody = str_replace('________________________________________________________________________{$contextName}http://localhost:9000/index.php/ifpb', '', $mailBody);
+
+		$mailBody = str_replace('________________________________________________________________________', '', $mailBody);
+		//----------------------------------------
 
 		require_once('lib/pkp/lib/phpmailer/class.phpmailer.php');
 		$mailer = new PHPMailer();
@@ -464,7 +472,8 @@ class Mail extends DataObject {
 		}
 		if (($s = $this->getEnvelopeSender()) != null) $mailer->Sender = $s;
 		if (($f = $this->getFrom()) != null) {
-			$mailer->SetFrom($f['email'], $f['name']);
+			//$mailer->SetFrom($f['email'], $f['name']);
+			$mailer->SetFrom($mailer->Username, 'Editora IFPB');
 		}
 		if (($r = $this->getReplyTo()) != null) {
 			$mailer->AddReplyTo($r['email'], $r['name']);
