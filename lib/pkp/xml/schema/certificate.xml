@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE schema SYSTEM "../../dtd/xmlSchema.dtd">
+
+<!--
+  * xml/schema/certificate.xml
+  *
+  * Certificate schema in XML.
+  -->
+
+<schema version="0.2">
+	<!--
+	  *
+	  * TABLE press_certificate_config
+	  *
+	  -->
+	<table name="press_certificate_config">
+		<field name="certificate_config_id" type="I8">
+			<KEY />
+			<AUTOINCREMENT/>
+		</field>
+		<field name="press_id" type="I8">
+			<NOTNULL/>
+		</field>
+
+		<field name="certificate_layout" type="X"></field>
+		<field name="certificate_enabled" type="C2" size="6">
+			<NOTNULL/>
+			<descr>(bool|int|float|string|object)</descr>
+		</field>
+
+	</table>
+</schema>
